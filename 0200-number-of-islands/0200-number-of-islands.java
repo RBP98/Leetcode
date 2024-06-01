@@ -1,79 +1,32 @@
-class Pair{
-    int first;
-    int second;
-    public Pair(int first,int second){
-        this.first = first;
-        this.second = second;
-    }
-}
 class Solution {
-    private void bfs(int row, int col, char[][] grid, boolean[][] visited){
-        Queue<Pair> queue = new LinkedList<Pair>();
-        Pair p = new Pair(row, col);
-        queue.add(p);
-        visited[row][col] = true;
-        int n = grid.length;
-        int m = grid[0].length;
-        while(!queue.isEmpty()){
-            int first = queue.peek().first;
-            int second = queue.peek().second;
-            queue.remove();
-         
-            int[] i = {-1, 0, 1, 0};
-            int[] j = {0, 1, 0, -1};
+    private void dfs(int i, int j, char[][] grid){
+        // int cell = grid[i][j];
+        if(i < 0 || j < 0 || i >= grid.length || j >= grid[0].length)
+            return;
+        if(grid[i][j] == '0')
+            return;
+        
+        grid[i][j] = '0';
 
-            for(int k = 0; k < 4; k++){
-                int nrow = first + i[k];
-                int ncol = second + j[k];
-
-                if(nrow >=0 && ncol >=0 && 
-                    nrow < n && ncol < m 
-                    // && i != Math.abs(j)
-                    ){
-                        if(!visited[nrow][ncol] && grid[nrow][ncol] =='1' ){
-                            visited[nrow][ncol] = true;
-                            queue.add(new Pair(nrow, ncol));
-                        }
-                        
-                    }
-            }
-            
-            // for(int i = -1; i <= 1; i++){
-            //     for(int j = -1; j <= 1; j++){
-            //         int nrow = first + i;
-            //         int ncol = second + j;
-
-            //         if(nrow >=0 && ncol >=0 && 
-            //         nrow < n && ncol < m 
-            //         && i != Math.abs(j)
-            //         ){
-            //             if(!visited[nrow][ncol] && grid[nrow][ncol] =='1' ){
-            //                 visited[nrow][ncol] = true;
-            //                 queue.add(new Pair(nrow, ncol));
-            //             }
-                        
-            //         }
-
-
-            //     }
-            // }
-        }
+        dfs(i, j + 1, grid);
+        dfs(i + 1, j, grid);
+        dfs(i, j - 1, grid);
+        dfs(i - 1, j, grid);
 
     }
-
     public int numIslands(char[][] grid) {
+        int count = 0;
         int n = grid.length;
         int m = grid[0].length;
-        boolean[][] visited = new boolean[n][m];
-        int count = 0;
-        for(int i = 0; i<n; i++){
-            for (int j =0 ; j<m; j++){
-                if(!visited[i][j] && grid[i][j] == '1'){
-                    bfs(i, j, grid, visited);
-                    count++;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(grid[i][j] == '1'){ 
+                dfs(i, j, grid);
+                count++;
                 }
             }
         }
     return count;
     }
+    
 }
