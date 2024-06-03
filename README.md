@@ -9,8 +9,21 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Breadth-First Search
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Matrix
 |  |
 | ------- |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
+# Depth-First Search
+|  |
+| ------- |
+| [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
+# Graph
+|  |
+| ------- |
+| [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
+# Topological Sort
+|  |
+| ------- |
+| [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
