@@ -35,6 +35,7 @@ class Solution {
 
         while(!queue.isEmpty()){
             int size = queue.size();
+            System.out.println(size);
             for(int s = 0; s < size; s++){
                 Pair temp = queue.poll();
             
