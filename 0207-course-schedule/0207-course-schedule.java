@@ -25,10 +25,8 @@ class Solution {
                 queue.add(i);
             }
         }
-        ArrayList<Integer> topo = new ArrayList();
         while(!queue.isEmpty()){
             int temp = queue.poll();
-            topo.add(temp);
             numCourses--;
             for(int i: adj.get(temp)){
                 indegree[i]--;
