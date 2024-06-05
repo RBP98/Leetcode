@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/RBP98/Leetcode/tree/master/0210-course-schedule-ii) |
+| [0543-diameter-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 # Graph
 |  |
 | ------- |
@@ -46,9 +47,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0094-binary-tree-inorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0543-diameter-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 # Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0543-diameter-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0543-diameter-of-binary-tree) |
