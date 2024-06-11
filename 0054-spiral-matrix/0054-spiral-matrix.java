@@ -12,26 +12,22 @@ class Solution {
             for(int i = left; i <= right && number>0; i++){
                 list.add(matrix[top][i]);
                 number--;
-                System.out.println(i+ " " + number);
-
+          
             }
             top++;
             for(int i = top; i <= bottom && number>0; i++){
                 list.add(matrix[i][right]);
                 number--;
-                System.out.println(i+ " " + number);
             }
             right--;
             for(int i = right; i >= left&& number>0; i-- ){
                 list.add(matrix[bottom][i]);
                 number--;
-                System.out.println(i+ " " + number);
             }
             bottom--;
             for(int i = bottom; i >= top&& number>0; i-- ){
                 list.add(matrix[i][left]);
                 number--;
-                System.out.println(i+ " " + number);
             }
             left++;
         }
