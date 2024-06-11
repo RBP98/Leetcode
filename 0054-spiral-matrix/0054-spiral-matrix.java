@@ -8,32 +8,32 @@ class Solution {
         int top = 0;
         int right = n - 1;
         int bottom = m - 1;
-        while(number != 0 ){
-            for(int i = left; i <= right; i++){
+        while(number > 0 ){
+            for(int i = left; i <= right && number>0; i++){
                 list.add(matrix[top][i]);
                 number--;
+                System.out.println(i+ " " + number);
+
             }
             top++;
-            for(int i = top; i <= bottom; i++){
+            for(int i = top; i <= bottom && number>0; i++){
                 list.add(matrix[i][right]);
                 number--;
+                System.out.println(i+ " " + number);
             }
             right--;
-            if(top <= bottom){
-                for(int i = right; i >= left; i-- ){
-                    list.add(matrix[bottom][i]);
-                    number--;
-                }
-                bottom--;
+            for(int i = right; i >= left&& number>0; i-- ){
+                list.add(matrix[bottom][i]);
+                number--;
+                System.out.println(i+ " " + number);
             }
-            if(left <= right){
-                for(int i = bottom; i >= top; i-- ){
-                    list.add(matrix[i][left]);
-                    number--;
-                }
-                left++;
+            bottom--;
+            for(int i = bottom; i >= top&& number>0; i-- ){
+                list.add(matrix[i][left]);
+                number--;
+                System.out.println(i+ " " + number);
             }
-            
+            left++;
         }
 
     return list;
