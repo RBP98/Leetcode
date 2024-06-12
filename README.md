@@ -72,12 +72,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/RBP98/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 # Math
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
+| [0070-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0070-climbing-stairs) |
 # Simulation
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
+# Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0070-climbing-stairs) |
