@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Breadth-First Search
 |  |
@@ -22,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Depth-First Search
 |  |
@@ -99,3 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0020-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/RBP98/Leetcode/tree/master/0344-reverse-string) |
+# Hash Table
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
