@@ -7,63 +7,71 @@ class Pair{
     }
 }
 
+
 class Solution {
-    private void bfs(Queue<Pair> queue, boolean[][] visited, int[][] heights){
+
+    private void bfs(int[][] heights, boolean[][] visited, Queue<Pair> queue, int n, int m){
+        int[] drow = {0, 1, 0, -1};
+        int[] dcol = {1, 0, -1, 0};
+       
         while(!queue.isEmpty()){
             Pair p = queue.poll();
-           
-            int[] drow = {0, 1, 0,-1};
-            int[] dcol = {1, 0, -1, 0};
-
+            int first = p.first;
+            int second = p.second;
+            
             for(int i = 0; i < 4; i++){
-                int nrow = p.first + drow[i]; 
-                int ncol = p.second + dcol[i];
+                int nrow = first + drow[i];
+                int ncol = second + dcol[i];
 
-                if(nrow >= 0 && ncol >= 0 && nrow < heights.length && ncol < heights[0].length && !visited[nrow][ncol] && heights[nrow][ncol] >= heights[p.first][p.second]){
-                    visited[nrow][ncol] = true;
+                if(nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && !visited[nrow][ncol] && heights[nrow][ncol] >= heights[first][second]){
                     queue.add(new Pair(nrow, ncol));
+                    visited[nrow][ncol] = true;
                 }
             }
+
         }
     }
-
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        Queue<Pair> queueP = new LinkedList();
-        Queue<Pair> queueA = new LinkedList();
+        int n = heights.length;
+        int m = heights[0].length;
+        boolean[][] visitedA = new boolean[n][m];
+        boolean[][] visitedP = new boolean[n][m];
+        List<List<Integer>> list = new ArrayList<>();
 
-        int m = heights.length;
-        int n = heights[0].length;
-        boolean[][] visitedP = new boolean[m][n];
-        boolean[][] visitedA = new boolean[m][n];
+        Queue<Pair> queueA = new LinkedList<>();
+        Queue<Pair> queueP = new LinkedList<>();
 
-        for(int i = 0; i < m; i++){
+        for(int i = 0; i < heights.length; i++){
+            queueA.add(new Pair(i,m-1));
+            visitedA[i][m-1] = true;
             queueP.add(new Pair(i,0));
             visitedP[i][0] = true;
-            queueA.add(new Pair(i,n-1));
-            visitedA[i][n - 1] = true;
         }
 
-        for(int i = 1; i < n; i++){
-            queueP.add(new Pair(0, i));
+        for(int i = 0; i < heights[0].length; i++){
+            queueA.add(new Pair(n-1,i));
+            visitedA[n-1][i] = true;
+            queueP.add(new Pair(0,i));
             visitedP[0][i] = true;
-            queueA.add(new Pair(m - 1, i - 1));
-            visitedA[m - 1][ i - 1] = true;
         }
 
-        bfs(queueP, visitedP, heights);
-        bfs(queueA, visitedA, heights);
+
+
+        bfs(heights, visitedA, queueA, n, m);
+        bfs(heights, visitedP, queueP, n, m);
         
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                List<Integer> temp = new ArrayList<Integer>();
-                if(visitedP[i][j] && visitedA[i][j]){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(visitedA[i][j] && visitedP[i][j]){
+                    List<Integer> temp = new ArrayList<>();
                     temp.add(i);
                     temp.add(j);
                     list.add(temp);
                 }
             }
         }
+
     return list;
     }
+
 }
