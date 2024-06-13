@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/0020-valid-parentheses) |
 | [0094-binary-tree-inorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 # Tree
@@ -95,5 +96,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/RBP98/Leetcode/tree/master/0344-reverse-string) |
