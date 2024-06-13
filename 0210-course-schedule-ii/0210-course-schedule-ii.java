@@ -1,13 +1,14 @@
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> adj = new ArrayList<>();
         for(int i = 0; i < numCourses; i++){
-            adj.add(new ArrayList<Integer>());
-        }
-        for(int i = 0 ; i < prerequisites.length; i++){
-            adj.get(prerequisites[i][1]).add(prerequisites[i][0]);
+            adj.add(new ArrayList<>());
         }
 
+        for(int i = 0; i < prerequisites.length; i++){
+            adj.get(prerequisites[i][1]).add(prerequisites[i][0]);
+        }
+        
         int[] indegree = new int[numCourses];
 
         for(int i = 0; i < numCourses; i++){
@@ -15,28 +16,27 @@ class Solution {
                 indegree[j]++;
             }
         }
-
-        Queue<Integer> queue = new LinkedList();
-        for(int i = 0; i < numCourses; i++){
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < indegree.length; i++){
             if(indegree[i] == 0){
                 queue.add(i);
             }
         }
-        int[] topo = new int[numCourses];
         int count = 0;
-        
+        int[] res = new int[numCourses];
         while(!queue.isEmpty()){
             int temp = queue.poll();
-            topo[count] = temp;
+            res[count] = temp;
             numCourses--;
-            for(int i : adj.get(temp)){
-                indegree[i]--;
-                if(indegree[i] == 0){
-                    queue.add(i);
+            for(int node: adj.get(temp)){
+                indegree[node]--;
+                if(indegree[node] == 0){
+                    queue.add(node);
                 }
             }
-        count++;
+            count++;
         }
-    return numCourses == 0 ? topo: new int[]{};
+
+    return numCourses == 0 ? res: new int[]{};
     }
 }
