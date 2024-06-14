@@ -5,6 +5,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
@@ -103,6 +104,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/RBP98/Leetcode/tree/master/0344-reverse-string) |
 # String
@@ -122,4 +124,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
