@@ -1,27 +1,16 @@
-class Solution {
-    public boolean isValid(String s) {
-        Stack<Character> count = new Stack<>();
-        
-        for (Character c : s.toCharArray()) {
-            if (c == '(' || c == '{' || c == '[') {
-                count.push(c);
+public class Solution {
+    public static boolean isValid(String s) {
+        while (true) {
+            if (s.contains("()")) {
+                s = s.replace("()", "");
+            } else if (s.contains("{}")) {
+                s = s.replace("{}", "");
+            } else if (s.contains("[]")) {
+                s = s.replace("[]", "");
             } else {
-                if(!count.isEmpty()){
-                     if (((c == ')' && count.peek() == '(')
-                    || (c == ']' && count.peek() == '[')
-                    || (c == '}' && count.peek() == '{'))
-                    ) {
-                count.pop();
-                }else{
-                    return false;
-                }
-            }else{
-                return false;
+                // If the string becomes empty, it indicates all brackets are matched.
+                return s.isEmpty();
             }
-               
-            }
-            
         }
-    return count.isEmpty();
     }
 }
