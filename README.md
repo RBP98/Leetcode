@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
+| [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RBP98/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
@@ -83,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Dynamic Programming
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/RBP98/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 # Math
@@ -117,3 +119,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
+# Greedy
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
