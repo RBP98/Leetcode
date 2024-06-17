@@ -7,43 +7,38 @@ class Pair{
     }
 }
 class Solution {
-
-    private void bfs(char[][] grid, int row, int col, boolean[][] visited, int n, int m){
+    private void bfs(int row, int col, int m, int n, boolean[][] visited, char[][] grid){
         Queue<Pair> queue = new LinkedList<>();
-
         queue.add(new Pair(row, col));
         visited[row][col] = true;
 
-        int[] drow = {0,1,0,-1};
-        int[] dcol = {1,0,-1,0};
-
         while(!queue.isEmpty()){
             Pair p = queue.poll();
-            int first = p.first;
-            int second = p.second;
+
+            int drow[] = {0, 1, 0, -1};
+            int dcol[] = {1, 0, -1, 0};
 
             for(int i = 0; i < 4; i++){
-                int nrow = first + drow[i];
-                int ncol = second + dcol[i];
+                int nrow = p.first + drow[i];
+                int ncol = p.second + dcol[i];
 
-                if(nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
-                    visited[nrow][ncol] = true;
+                if(nrow >= 0 && ncol >=0 && nrow < m && ncol < n && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
                     queue.add(new Pair(nrow, ncol));
+                    visited[nrow][ncol] = true;
                 }
             }
-
         }
     }
-    
+
     public int numIslands(char[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
-        boolean[][] visited = new boolean[n][m];
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] visited = new boolean[m][n];
         int count = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
                 if(!visited[i][j] && grid[i][j] == '1'){
-                    bfs(grid, i, j, visited, n, m);
+                    bfs(i, j, m, n, visited, grid);
                     count++;
                 }
             }
