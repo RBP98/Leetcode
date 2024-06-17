@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/RBP98/Leetcode/tree/master/0283-move-zeroes) |
+| [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RBP98/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Breadth-First Search
@@ -112,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0283-move-zeroes](https://github.com/RBP98/Leetcode/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/RBP98/Leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/RBP98/Leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 # String
 |  |
 | ------- |
@@ -127,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
+| [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 # Union Find
 |  |
 | ------- |
@@ -141,3 +144,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
+| [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+# Binary Search
+|  |
+| ------- |
+| [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
