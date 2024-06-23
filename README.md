@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0042-trapping-rain-water](https://github.com/RBP98/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0094-binary-tree-inorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
 # Tree
 |  |
 | ------- |
@@ -136,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0344-reverse-string](https://github.com/RBP98/Leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/RBP98/Leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
 | [0516-longest-palindromic-subsequence](https://github.com/RBP98/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [1170-shortest-common-supersequence](https://github.com/RBP98/Leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RBP98/Leetcode/tree/master/1250-longest-common-subsequence) |
@@ -158,6 +160,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
+| [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
 # Sorting
 |  |
 | ------- |
@@ -193,3 +196,4 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/RBP98/Leetcode/tree/master/0042-trapping-rain-water) |
+| [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
