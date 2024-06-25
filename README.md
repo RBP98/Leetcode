@@ -139,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0345-reverse-vowels-of-a-string](https://github.com/RBP98/Leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
 | [0516-longest-palindromic-subsequence](https://github.com/RBP98/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 | [1170-shortest-common-supersequence](https://github.com/RBP98/Leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RBP98/Leetcode/tree/master/1250-longest-common-subsequence) |
 # Hash Table
@@ -150,6 +151,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 # Union Find
 |  |
 | ------- |
@@ -161,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
 | [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 # Sorting
 |  |
 | ------- |
@@ -168,6 +171,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 # Binary Search
 |  |
 | ------- |
@@ -180,6 +184,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 # Bucket Sort
 |  |
 | ------- |
@@ -188,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0778-reorganize-string](https://github.com/RBP98/Leetcode/tree/master/0778-reorganize-string) |
 # Quickselect
 |  |
 | ------- |
