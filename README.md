@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/RBP98/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RBP98/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
+| [0898-transpose-matrix](https://github.com/RBP98/Leetcode/tree/master/0898-transpose-matrix) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Breadth-First Search
 |  |
@@ -42,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RBP98/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
+| [0898-transpose-matrix](https://github.com/RBP98/Leetcode/tree/master/0898-transpose-matrix) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 # Depth-First Search
 |  |
@@ -116,6 +118,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
+| [0898-transpose-matrix](https://github.com/RBP98/Leetcode/tree/master/0898-transpose-matrix) |
 # Memoization
 |  |
 | ------- |
