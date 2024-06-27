@@ -62,6 +62,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/RBP98/Leetcode/tree/master/0210-course-schedule-ii) |
+| [1916-find-center-of-star-graph](https://github.com/RBP98/Leetcode/tree/master/1916-find-center-of-star-graph) |
 # Topological Sort
 |  |
 | ------- |
