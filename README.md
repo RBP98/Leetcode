@@ -216,3 +216,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0042-trapping-rain-water](https://github.com/RBP98/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0402-remove-k-digits](https://github.com/RBP98/Leetcode/tree/master/0402-remove-k-digits) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
+## Binary Search
+|  |
+| ------- |
+| [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
+<!---LeetCode Topics End-->
