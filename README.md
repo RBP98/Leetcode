@@ -260,4 +260,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+## Math
+|  |
+| ------- |
+| [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
+## Simulation
+|  |
+| ------- |
+| [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
 <!---LeetCode Topics End-->
