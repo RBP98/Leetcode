@@ -290,8 +290,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
+| [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 ## String
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
+| [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
+## Sorting
+|  |
+| ------- |
+| [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 <!---LeetCode Topics End-->
