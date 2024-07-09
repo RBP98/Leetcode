@@ -297,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
+| [0146-lru-cache](https://github.com/RBP98/Leetcode/tree/master/0146-lru-cache) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## String
@@ -340,4 +341,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/RBP98/Leetcode/tree/master/0146-lru-cache) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/RBP98/Leetcode/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/RBP98/Leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
