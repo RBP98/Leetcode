@@ -231,6 +231,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1803-average-waiting-time](https://github.com/RBP98/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Binary Search
 |  |
@@ -256,6 +257,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0102-binary-tree-level-order-traversal](https://github.com/RBP98/Leetcode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
+| [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Binary Tree
 |  |
 | ------- |
@@ -272,6 +274,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -289,6 +292,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1803-average-waiting-time](https://github.com/RBP98/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
+| [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Stack
 |  |
 | ------- |
@@ -335,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
+| [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Recursion
 |  |
 | ------- |
