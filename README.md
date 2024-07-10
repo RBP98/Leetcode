@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/RBP98/Leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/RBP98/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
@@ -299,6 +300,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0094-binary-tree-inorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
+| [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 ## Hash Table
 |  |
 | ------- |
@@ -311,6 +313,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
+| [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 ## Sorting
 |  |
 | ------- |
