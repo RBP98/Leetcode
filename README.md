@@ -226,6 +226,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/RBP98/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/RBP98/Leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
+| [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/RBP98/Leetcode/tree/master/0053-maximum-subarray) |
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
@@ -296,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/RBP98/Leetcode/tree/master/0013-roman-to-integer) |
+| [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
@@ -371,6 +373,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/RBP98/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
