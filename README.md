@@ -228,6 +228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/RBP98/Leetcode/tree/master/0053-maximum-subarray) |
+| [0056-merge-intervals](https://github.com/RBP98/Leetcode/tree/master/0056-merge-intervals) |
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RBP98/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
@@ -345,6 +346,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RBP98/Leetcode/tree/master/0015-3sum) |
+| [0056-merge-intervals](https://github.com/RBP98/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 ## Greedy
