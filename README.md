@@ -228,6 +228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
 | [0053-maximum-subarray](https://github.com/RBP98/Leetcode/tree/master/0053-maximum-subarray) |
 | [0073-set-matrix-zeroes](https://github.com/RBP98/Leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RBP98/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0118-pascals-triangle](https://github.com/RBP98/Leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/RBP98/Leetcode/tree/master/0119-pascals-triangle-ii) |
@@ -342,6 +343,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RBP98/Leetcode/tree/master/0015-3sum) |
+| [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 ## Greedy
 |  |
@@ -402,6 +404,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/RBP98/Leetcode/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/RBP98/Leetcode/tree/master/0031-next-permutation) |
+| [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/RBP98/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Dynamic Programming
 |  |
