@@ -5,9 +5,9 @@ class Solution {
             set.add(i);
         }
         int longestStreak = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(!set.contains(nums[i] - 1)){
-                int currentNum = nums[i];
+        for(int i : set){
+            if(!set.contains(i - 1)){
+                int currentNum = i;
                 int currentStreak = 1;
                 while(set.contains(currentNum + 1)){
                     currentNum++;
