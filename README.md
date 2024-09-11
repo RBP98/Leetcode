@@ -343,6 +343,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/RBP98/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/RBP98/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/RBP98/Leetcode/tree/master/0146-lru-cache) |
+| [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
@@ -356,6 +357,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/RBP98/Leetcode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
+| [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/RBP98/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
@@ -369,6 +371,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/RBP98/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/RBP98/Leetcode/tree/master/0075-sort-colors) |
 | [0215-kth-largest-element-in-an-array](https://github.com/RBP98/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 ## Greedy
