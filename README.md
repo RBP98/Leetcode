@@ -277,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0226-invert-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0572-subtree-of-another-tree](https://github.com/RBP98/Leetcode/tree/master/0572-subtree-of-another-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -296,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/RBP98/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0226-invert-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0572-subtree-of-another-tree](https://github.com/RBP98/Leetcode/tree/master/0572-subtree-of-another-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -306,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0572-subtree-of-another-tree](https://github.com/RBP98/Leetcode/tree/master/0572-subtree-of-another-tree) |
 | [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Binary Search Tree
 |  |
@@ -496,4 +499,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+## String Matching
+|  |
+| ------- |
+| [0572-subtree-of-another-tree](https://github.com/RBP98/Leetcode/tree/master/0572-subtree-of-another-tree) |
+## Hash Function
+|  |
+| ------- |
+| [0572-subtree-of-another-tree](https://github.com/RBP98/Leetcode/tree/master/0572-subtree-of-another-tree) |
 <!---LeetCode Topics End-->
