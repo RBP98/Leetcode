@@ -22,7 +22,8 @@ class Solution {
     }
 
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        if(root == null || subRoot == null) return false;
+        if(root == null) return false;
+        if(subRoot == null) return true;
         if(isSameTree(root, subRoot)){
             return true;
         }
