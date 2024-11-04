@@ -1,12 +1,9 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        Map<Character, Integer> map = new HashMap<>();
         int[] arr = new int[26];
         for(int i = 0; i < s.length(); i++){
             char c = s.charAt(i);
             arr[c - 'a']++;
-            // map.put(c, map.getOrDefault(c, 0) + 1);
-            
         }
 
         for(int i = 0; i < t.length(); i++){
