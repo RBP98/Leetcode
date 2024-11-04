@@ -8,7 +8,11 @@ class Solution {
 
         for(int i = 0; i < t.length(); i++){
             char c = t.charAt(i);
-            arr[c - 'a']--;
+            if(arr[c - 'a'] >= 0)
+                arr[c - 'a']--;
+            else
+                return false;
+
         }
 
         for(int i: arr){
