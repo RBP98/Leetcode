@@ -5,7 +5,6 @@ class Solution {
             if(Character.isLetterOrDigit(c)){
                 sb.append(Character.toLowerCase(c));
             }
-
         }
         String clean = sb.toString();
         int left = 0;
