@@ -11,9 +11,8 @@ class Solution {
             }
             list.add(s);
             map.put(sorted, list);
-
         }
-        return new ArrayList<List<String>>(map.values());
+        return new ArrayList<>(map.values());
     }
 }
 
