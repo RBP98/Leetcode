@@ -5,18 +5,17 @@ class Solution {
             char arr[] = s.toCharArray();
             Arrays.sort(arr);
             String sorted = new String(arr);
-            if(!map.containsKey(sorted)){
-                List<String> list = new ArrayList<>();
-                list.add(s);
-                map.put(sorted, list); 
-            }else{
-                List<String> list = map.get(sorted);
-                list.add(s);
-                map.put(sorted, list);
+            List<String> list = new ArrayList<>();
+            if(map.containsKey(sorted)){
+                list = map.get(sorted);    
             }
-
+            list.add(s);
+            map.put(sorted, list);
 
         }
         return new ArrayList<List<String>>(map.values());
     }
 }
+
+       
+
