@@ -5,18 +5,18 @@ class Solution {
             if(Character.isLetterOrDigit(c)){
                 sb.append(Character.toLowerCase(c));
             }
-        } 
-        String cleanString = sb.toString();
-        int left = 0;
-        int right = cleanString.length() - 1;
 
+        }
+        String clean = sb.toString();
+        int left = 0;
+        int right = clean.length() - 1;
         while(left < right){
-            if(cleanString.charAt(left) != cleanString.charAt(right)){ 
+            if(clean.charAt(left) != clean.charAt(right)){
                 return false;
             }
-            left++;
-            right--;
-        }
+                left++;
+                right--;
+        } 
         return true;
     }
 }
