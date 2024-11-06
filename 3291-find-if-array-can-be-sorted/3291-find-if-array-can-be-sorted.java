@@ -9,19 +9,31 @@ class Solution {
     }
 
     public boolean canSortArray(int[] nums) {
-        for(int i = 0; i < nums.length - 1; i++){
-            for(int j = i + 1; j < nums.length; j++){
-                if(nums[j] < nums[i]){
-                    if(Integer.bitCount(nums[j]) == Integer.bitCount(nums[i])){
-                        int temp = nums[i];
-                        nums[i] = nums[j];
-                        nums[j] = temp;
-                    }else{
-                        return false;
-                    }
+        int maxOfSegment = nums[0];
+        int minOfSegment = nums[0];
+        int numOfSetBits = Integer.bitCount(nums[0]);
+        int maxOfPrevSegment = Integer.MIN_VALUE;
+
+        for(int i = 1; i < nums.length; i++){
+            if(Integer.bitCount(nums[i]) == numOfSetBits){
+                maxOfSegment = Math.max(maxOfSegment, nums[i]);
+                minOfSegment = Math.min(minOfSegment, nums[i]);
+            }else{
+                if(maxOfPrevSegment > minOfSegment){
+                    return false;
                 }
+                maxOfPrevSegment = maxOfSegment;
+                numOfSetBits = Integer.bitCount(nums[i]);
+                maxOfSegment = nums[i];
+                minOfSegment = nums[i];
+                
             }
+            
         }
-        return true;
+
+        if (minOfSegment < maxOfPrevSegment) {
+            return false;
+        }
+        return true; 
     }
 }
