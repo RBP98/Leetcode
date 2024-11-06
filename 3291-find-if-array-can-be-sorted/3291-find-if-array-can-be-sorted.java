@@ -12,7 +12,7 @@ class Solution {
         for(int i = 0; i < nums.length; i++){
             for(int j = i; j < nums.length; j++){
                 if(nums[j] < nums[i]){
-                    if(countSetBits(nums[j]) == countSetBits(nums[i])){
+                    if(Integer.bitCount(nums[j]) == Integer.bitCount(nums[i])){
                         int temp = nums[i];
                         nums[i] = nums[j];
                         nums[j] = temp;
