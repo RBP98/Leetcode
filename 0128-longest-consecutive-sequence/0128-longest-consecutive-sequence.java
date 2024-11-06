@@ -8,9 +8,10 @@ class Solution {
         int longestSeq = 0;
         for(int i = 0; i < nums.length; i++){
             if(!set.contains(nums[i] - 1)){
-                int seq = 0;
+                int seq = 1;
                 int curr = nums[i];
-                while(set.contains(curr++)){
+                while(set.contains(curr + 1)){
+                    curr++;
                     seq++;
                 }
                 longestSeq = Math.max(seq, longestSeq);
