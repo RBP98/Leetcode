@@ -258,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Binary Search
 |  |
 | ------- |
@@ -401,6 +402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
+| [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Greedy
 |  |
 | ------- |
@@ -426,6 +428,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0191-number-of-1-bits](https://github.com/RBP98/Leetcode/tree/master/0191-number-of-1-bits) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
+| [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Union Find
 |  |
 | ------- |
