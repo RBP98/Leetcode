@@ -14,13 +14,16 @@
  * }
  */
 class Solution {
-    private int minVal(TreeNode node){
-        int minValue = 0;
-        while(node != null){
-            minValue = node.val;
-            node = node.left;
+    private int minVal(TreeNode root){
+        // /int minValue = 0;
+        // while(node != null){
+        //     minValue = node.val;
+        //     node = node.left;
+        // }
+        if(root.left == null){
+            return root.val;
         }
-        return minValue;
+        return minVal(root.left);
     }
 
     public TreeNode deleteNode(TreeNode root, int key) {
