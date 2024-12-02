@@ -30,6 +30,6 @@ class Solution {
         if(val > root.val){
             return searchBST(root.right, val);
         }
-        return root;
+        return null;
     }
 }
