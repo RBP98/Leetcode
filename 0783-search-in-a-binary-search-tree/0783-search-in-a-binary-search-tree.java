@@ -19,10 +19,7 @@ class Solution {
             return null;
         }
 
-        if(root.val == val){
-            return root;
-        }
-
+        
         if(val < root.val){
             return searchBST(root.left, val);
         }
@@ -30,6 +27,7 @@ class Solution {
         if(val > root.val){
             return searchBST(root.right, val);
         }
-        return null;
+
+        return root;
     }
 }
