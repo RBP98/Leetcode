@@ -7,8 +7,9 @@ class Solution {
         int max = 0;
         for(int i = 0; i < nums.length; i++){
             int count = 0;
+            int curr = nums[i];
             if(!set.contains(nums[i] - 1)){
-                while(set.contains(nums[i]++)){
+                while(set.contains(curr++)){
                     count++;
                 }
                 max = Math.max(max, count);
