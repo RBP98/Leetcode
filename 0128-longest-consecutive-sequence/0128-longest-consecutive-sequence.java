@@ -5,10 +5,10 @@ class Solution {
             set.add(i);
         }
         int max = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(!set.contains(nums[i] - 1)){
+        for(int i :nums){
+            if(!set.contains(i - 1)){
                 int count = 0;
-                int curr = nums[i];
+                int curr = i;
             
                 while(set.contains(curr++)){
                     count++;
