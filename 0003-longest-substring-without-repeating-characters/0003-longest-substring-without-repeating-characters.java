@@ -11,10 +11,10 @@ class Solution {
                 max = Math.max(set.size(), max);
                 right++;
             }else{
-                while(set.contains(s.charAt(right))){
+                // while(set.contains(s.charAt(right))){
                     set.remove(s.charAt(left));
                     left++;
-                }
+                // }
             }
         }
         return max;
