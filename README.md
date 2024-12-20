@@ -253,6 +253,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/RBP98/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0739-daily-temperatures](https://github.com/RBP98/Leetcode/tree/master/0739-daily-temperatures) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/RBP98/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -446,6 +447,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 | [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Greedy
@@ -454,6 +456,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/RBP98/Leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RBP98/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/RBP98/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Counting
@@ -561,6 +564,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0119-pascals-triangle-ii](https://github.com/RBP98/Leetcode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RBP98/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RBP98/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [1013-fibonacci-number](https://github.com/RBP98/Leetcode/tree/master/1013-fibonacci-number) |
 ## Database
 |  |
