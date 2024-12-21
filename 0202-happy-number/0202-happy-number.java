@@ -13,7 +13,6 @@ class Solution {
             
             if(!set.contains(sum)){
                 set.add(sum);
-                System.out.println(sum);
             }else{
                 return false;
             }
