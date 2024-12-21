@@ -1,3 +1,6 @@
+//Same as number of islands. Except counting the islands, here we count the size of each island in the bfs and compare it with maxArea while updating maxArea each time area of current island is greater than maxArea
+
+
 class Pair{
     int first;
     int second;
