@@ -1,12 +1,3 @@
-class Pair{
-    int first;
-    int second;
-
-    public Pair(int first, int second){
-        this.first = first;
-        this.second = second;
-    }
-}
 
 class Solution {
     private void bfs(int row, int col, boolean[][] visited, char[][] grid, int m, int n){
@@ -44,11 +35,19 @@ class Solution {
             for(int j = 0; j < n; j++){
                 if(!visited[i][j] && grid[i][j] == '1'){
                     bfs(i , j, visited, grid, m, n);
-                    System.out.println();
                     count++;
                 }
             }
         }
     return count;
+    }
+}
+class Pair{
+    int first;
+    int second;
+
+    public Pair(int first, int second){
+        this.first = first;
+        this.second = second;
     }
 }
