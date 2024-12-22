@@ -17,26 +17,7 @@ class Solution {
         int m = board.length;
         int n = board[0].length;
         
-        char[][] temp = new char[n][m];
-
-        for(int i = 0; i < m; i++){
-            if(!isArrValid(board[i])){
-                return false;
-            }
-        }
-
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                temp[i][j] = board[j][i];
-            }
-        }
-
-        for(int i = 0; i < n; i++){
-            if(!isArrValid(temp[i])){
-                return false;
-            }
-        }
-
+        // char[][] temp = new char[n][m];
         for(int i = 0; i < m; i = i + 3){
             for(int j = 0; j < n; j = j + 3){
                 Set<Character> set = new HashSet<>();
@@ -54,6 +35,28 @@ class Solution {
                 }
             }
         }
+
+        for(int i = 0; i < m; i++){
+            if(!isArrValid(board[i])){
+                return false;
+            }
+        }
+
+        for(int i = 0; i < m; i++){
+            for(int j = i + 1; j < n; j++){
+                char temp = board[i][j];
+                board[i][j] = board[j][i];
+                board[j][i] = temp;
+            }
+        }
+
+        for(int i = 0; i < n; i++){
+            if(!isArrValid(board[i])){
+                return false;
+            }
+        }
+
+        
         return true;
     }
 }
