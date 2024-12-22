@@ -27,7 +27,7 @@ class Solution {
         if(freshOranges == 0) return 0;
         while(!queue.isEmpty()){
             int size = queue.size();
-            boolean rottenThisRound = false; // Track if any orange is rotted in this minute
+            // boolean rottenThisRound = false;
             for(int l = 0; l < size; l++){
                 Pair p = queue.poll();
                 int first = p.first;
@@ -44,14 +44,14 @@ class Solution {
                         queue.add(new Pair(nrow, ncol));
                         grid[nrow][ncol] = 2;
                         freshOranges--;
-                        rottenThisRound = true;
+                        // rottenThisRound = true;
                     }
                 }
             }
-            if (rottenThisRound) {
+            // if (rottenThisRound) {
                 minutes++;
-            }
+            // }
         }
-        return freshOranges == 0 ? minutes : -1;
+        return freshOranges == 0 ? minutes - 1 : -1;
     }
 }
