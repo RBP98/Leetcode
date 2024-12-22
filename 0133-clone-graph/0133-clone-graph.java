@@ -24,11 +24,12 @@ class Solution {
     public Node cloneGraph(Node node) {
 
         if(node == null) return null;
-        Node newNode = new Node(node.val, new ArrayList<>());
-
+       
         if(map.containsKey(node)){
             return map.get(node);
         }
+        Node newNode = new Node(node.val, new ArrayList<>());
+
         map.put(node, newNode);
         for(Node n : node.neighbors){
             newNode.neighbors.add(cloneGraph(n));
