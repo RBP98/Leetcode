@@ -28,7 +28,7 @@ class Solution {
         if(map.containsKey(node)){
             return map.get(node);
         }
-        Node newNode = new Node(node.val, new ArrayList<>());
+        Node newNode = new Node(node.val, new ArrayList());
 
         map.put(node, newNode);
         for(Node n : node.neighbors){
