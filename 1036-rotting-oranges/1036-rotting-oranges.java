@@ -1,7 +1,7 @@
-class Pair{
+class Pair {
     int first;
     int second;
-    public Pair(int first,int second){
+    public Pair(int first, int second){
         this.first = first;
         this.second = second;
     }
@@ -9,55 +9,49 @@ class Pair{
 
 class Solution {
     public int orangesRotting(int[][] grid) {
-        Queue<Pair> queue = new LinkedList();
         int m = grid.length;
         int n = grid[0].length;
-        int count = 0;
-        int fresh = 0;
-        boolean[][] visited = new boolean[m][n];
+        int freshOranges = 0;
+        Queue<Pair> queue = new LinkedList<>();
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                if(grid[i][j] == 2){  
-                    queue.add(new Pair(i,j));
-                    visited[i][j] = true;
-                    // break;
+                if(grid[i][j] == 1){
+                    freshOranges++;
                 }
-                else if(grid[i][j] == 1){
-                    fresh++;                   
+                if(grid[i][j] == 2){
+                    queue.add(new Pair(i, j));
                 }
             }
         }
-
-        if(fresh == 0) return 0;
-        
-        // queue.add(new Pair(sr, sc));
-        // visited[sr][sc] = true;
-
+        int minutes = 0;
+        if(freshOranges == 0) return 0;
         while(!queue.isEmpty()){
             int size = queue.size();
-            System.out.println(size);
-            for(int s = 0; s < size; s++){
-                Pair temp = queue.poll();
-            
-                int[] drow = {0, 1, 0, -1};
-                int[] dcol = {1, 0, -1, 0};
+            boolean rottenThisRound = false; // Track if any orange is rotted in this minute
+            for(int l = 0; l < size; l++){
+                Pair p = queue.poll();
+                int first = p.first;
+                int second = p.second;
+
+                int drow[] = {0, 1, 0, -1};
+                int dcol[] = {1, 0, -1, 0};
 
                 for(int i = 0; i < 4; i++){
-                    int nrow = temp.first + drow[i];
-                    int ncol = temp.second + dcol[i];
+                    int nrow = first + drow[i];
+                    int ncol = second + dcol[i];
 
-                    if(nrow >= 0 && nrow < grid.length && ncol >= 0 && ncol < grid[0].length && !visited[nrow][ncol] && grid[nrow][ncol] == 1){
-                        grid[nrow][ncol] = 2;
-                        visited[nrow][ncol] = true;
+                    if(nrow >= 0 && nrow < m && ncol >= 0 && ncol < n && grid[nrow][ncol] == 1){
                         queue.add(new Pair(nrow, ncol));
-                        fresh--;
+                        grid[nrow][ncol] = 2;
+                        freshOranges--;
+                        rottenThisRound = true;
                     }
                 }
             }
-            
-            count++;
+            if (rottenThisRound) {
+                minutes++;
+            }
         }
-     
-    return fresh==0 ? count -1: -1;
+        return freshOranges == 0 ? minutes : -1;
     }
 }
