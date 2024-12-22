@@ -24,7 +24,7 @@ class Solution {
     public Node cloneGraph(Node node) {
 
         if(node == null) return null;
-        Node newNode = new Node(node.val);
+        Node newNode = new Node(node.val, new ArrayList<>());
 
         if(map.containsKey(node)){
             return map.get(node);
