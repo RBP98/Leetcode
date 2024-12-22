@@ -12,21 +12,6 @@ class Solution {
         }
         return true;
     }
-
-    // private boolean isBoxValid(char[][] mat){
-    //     Set<Character> set = new HashSet<>();
-    //     for(int i = 0; i < mat.length; i++){
-    //         for(int j = 0; j < mat[0].length; j++){
-    //             if(!set.contains(mat[i][j])){
-    //                 set.add(mat[i][j]);
-    //             }else{
-    //                 return false;
-    //             }
-    //         }
-    //     }
-    //      return true;
-    // }
-
     public boolean isValidSudoku(char[][] board) {
         
         int m = board.length;
@@ -48,7 +33,6 @@ class Solution {
 
         for(int i = 0; i < n; i++){
             if(!isArrValid(temp[i])){
-                // System.out.println("test");
                 return false;
             }
         }
