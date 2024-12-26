@@ -19,11 +19,11 @@ class Solution {
         // }
         
 
-         int rootVal = root.val;
-        if(rootVal < p.val && rootVal < q.val)
+         
+        if(root.val < p.val && root.val < q.val)
             return lowestCommonAncestor(root.right, p, q);
 
-        else if(rootVal > p.val && rootVal > q.val)
+        else if(root.val > p.val && root.val > q.val)
             return lowestCommonAncestor(root.left, p, q);
         else
             return root;
