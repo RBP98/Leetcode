@@ -1,22 +1,23 @@
 class Solution {
     public int maxScore(String s) {
-        int totalOnes = 0;
-        for(char c: s.toCharArray()){
-            if(c == '1') totalOnes++;
-        }
-
-        if(totalOnes == 0) return 1;
         
         int leftZeroes = 0;
-        int max = 0;
+        int leftOnes = 0;
+ 
+        int max = Integer.MIN_VALUE;
         for(int i = 0; i < s.length() - 1; i++){
             if(s.charAt(i) == '1') 
-                totalOnes--;
+                leftOnes++;
             else
                 leftZeroes++;
 
-            max = Math.max(max, leftZeroes + totalOnes);           
+            max = Math.max(max, leftZeroes - leftOnes);
+
+                       
         }
-    return max;
+        if(s.charAt(s.length() - 1) == '1'){
+                leftOnes++;
+            }
+    return leftOnes + max;
     }
 }
