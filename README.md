@@ -447,6 +447,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/RBP98/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/RBP98/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/RBP98/Leetcode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
@@ -625,6 +626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/RBP98/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1940-maximum-xor-for-each-query](https://github.com/RBP98/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 ## Monotonic Stack
 |  |
