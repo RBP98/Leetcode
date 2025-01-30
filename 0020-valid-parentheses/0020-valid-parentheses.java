@@ -8,8 +8,8 @@ class Solution {
             }else{
                 if(!stack.isEmpty() && 
                    ((c == ')' && stack.peek() == '(') ||
-                   (c == ']' && stack.peek() == '[') ||
-                   (c == '}' && stack.peek() == '{') )){
+                    (c == ']' && stack.peek() == '[') ||
+                    (c == '}' && stack.peek() == '{') )){
                     stack.pop();
                 }else{
                     return false;
