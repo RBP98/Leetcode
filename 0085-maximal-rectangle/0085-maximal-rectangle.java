@@ -54,16 +54,6 @@ class Solution {
         int[] nsr = nearestSmallestRight(heights);
         int[] nsl = nearestSmallestLeft(heights);
         int maxArea = 0;
-        // for(int j: nsr){
-        //     System.out.print(j + " ");
-        // }
-        // System.out.println();
-
-        // for(int j: nsl){
-        //     System.out.print(j + " ");
-        // }
-        // System.out.println();
-        
         for(int i = 0; i < width.length; i++){
             width[i] = nsr[i] - nsl[i] - 1;
             maxArea = Math.max(maxArea, width[i] * heights[i]);
@@ -83,10 +73,6 @@ class Solution {
                     heights[j] = 0;
                 }
             }
-            for(int j: heights){
-                System.out.print(j + " ");
-            }
-            System.out.println();
             maxArea = Math.max(maxArea, maxH(heights));
         }
         return maxArea;
