@@ -52,14 +52,6 @@ class Solution {
 
         int maxArea = 0;
 
-        for(int i: nsr){
-            System.out.print(i + " ");
-        }
-
-        System.out.println();
-        for(int i: nsl){
-            System.out.print(i + " ");
-        }
         for(int i = 0; i < width.length; i++){
             width[i] = nsr[i] - nsl[i] - 1;
 
