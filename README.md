@@ -263,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0792-binary-search](https://github.com/RBP98/Leetcode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/RBP98/Leetcode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
 | [1127-last-stone-weight](https://github.com/RBP98/Leetcode/tree/master/1127-last-stone-weight) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/RBP98/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -295,6 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0792-binary-search](https://github.com/RBP98/Leetcode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/RBP98/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 ## Tree
 |  |
@@ -391,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/RBP98/Leetcode/tree/master/0202-happy-number) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
 | [0795-k-th-symbol-in-grammar](https://github.com/RBP98/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
+| [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [1013-fibonacci-number](https://github.com/RBP98/Leetcode/tree/master/1013-fibonacci-number) |
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -659,6 +662,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/RBP98/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1940-maximum-xor-for-each-query](https://github.com/RBP98/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -680,4 +684,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/RBP98/Leetcode/tree/master/0022-generate-parentheses) |
+## Randomized
+|  |
+| ------- |
+| [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 <!---LeetCode Topics End-->
