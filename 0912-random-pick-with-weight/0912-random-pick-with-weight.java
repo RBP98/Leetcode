@@ -15,12 +15,25 @@ class Solution {
     
     public int pickIndex() {
         double target = total * Math.random();
-        for(int i = 0; i < prefixSum.length; i++){
-            if(target < prefixSum[i]){
-                return i;
+        int low = 0;
+        int high = prefixSum.length;
+
+        while(low < high){
+            int mid = low + (high - low)/2;
+            if(target > prefixSum[mid]){
+                low = mid + 1;
+            }else{
+                high = mid;
             }
+            
         }
-    return -1;
+        return low;
+
+        // for(int i = 0; i < prefixSum.length; i++){
+        //     if(target < prefixSum[i]){
+        //         return i;
+        //     }
+        // }
 
     }
 }
