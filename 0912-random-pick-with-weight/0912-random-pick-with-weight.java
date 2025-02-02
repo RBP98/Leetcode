@@ -28,13 +28,6 @@ class Solution {
             
         }
         return low;
-
-        // for(int i = 0; i < prefixSum.length; i++){
-        //     if(target < prefixSum[i]){
-        //         return i;
-        //     }
-        // }
-
     }
 }
 
