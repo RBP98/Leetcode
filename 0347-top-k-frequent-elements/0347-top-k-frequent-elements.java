@@ -1,34 +1,37 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        List<Integer> output = new ArrayList<>();
         Map<Integer, Integer> map = new HashMap<>();
-        for(int i = 0; i < nums.length; i++){
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        List<Integer>[] bucket = new ArrayList[nums.length + 1];
+        List<Integer> list = new ArrayList<>();
+        for(int i: nums){
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
-
-        List<Integer>[] lists = new List[nums.length + 1];
 
         for(Map.Entry<Integer, Integer> entry: map.entrySet()){
             int key = entry.getKey();
             int value = entry.getValue();
-            if(lists[value] == null){
-                List<Integer> temp = new ArrayList<>();
-                lists[value] = temp;   
+
+            if(bucket[value] == null){
+                bucket[value] = new ArrayList<Integer>();
             }
-            (lists[value]).add(key);
+
+            bucket[value].add(key);
         }
 
-        for(int i = lists.length - 1; i >= 0; i--){
-            if(lists[i] != null){
-                for(int a: lists[i]){
-                    output.add(a);
+        for(int i = bucket.length - 1; i >=0; i--){
+            if(bucket[i] != null){
+                for(int j: bucket[i]){
+                    list.add(j);
+                    k--;
+                    if(k == 0){
+                        return list.stream().mapToInt(Integer::intValue).toArray();
+                    }
                 }
+        
+                    
             }
-            if(output.size() == k){
-                break;
-            }
+            
         }
-    return output.stream().mapToInt(Integer::intValue).toArray();
-
+        return new int[]{};
     }
 }
