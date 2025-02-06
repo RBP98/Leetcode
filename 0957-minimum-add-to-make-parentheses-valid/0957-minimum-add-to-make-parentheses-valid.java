@@ -6,8 +6,9 @@ class Solution {
             if(c == '('){
                 openBrackets++;
             }else{
-                openBrackets--;
-                if(openBrackets <= 0){
+                if(openBrackets > 0){
+                    openBrackets--;
+                }else{
                     extraBrackets++;
                 }
             }
