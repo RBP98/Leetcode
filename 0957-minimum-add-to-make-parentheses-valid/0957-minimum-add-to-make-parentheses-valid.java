@@ -1,18 +1,18 @@
 class Solution {
     public int minAddToMakeValid(String s) {
-        int count = 0;
         int extraBrackets = 0;
+        int openBrackets = 0;
         for(char c: s.toCharArray()){
-            if(c=='('){
-                count++;
+            if(c == '('){
+                openBrackets++;
             }else{
-                if(count > 0)
-                    count--;
-                else{
+                openBrackets--;
+                if(openBrackets <= 0){
                     extraBrackets++;
                 }
             }
         }
-    return count + extraBrackets;
+
+        return openBrackets + extraBrackets;
     }
 }
