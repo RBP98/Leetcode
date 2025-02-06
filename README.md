@@ -268,6 +268,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
+| [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1127-last-stone-weight](https://github.com/RBP98/Leetcode/tree/master/1127-last-stone-weight) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/RBP98/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1524-string-matching-in-an-array](https://github.com/RBP98/Leetcode/tree/master/1524-string-matching-in-an-array) |
@@ -300,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0792-binary-search](https://github.com/RBP98/Leetcode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
+| [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/RBP98/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 ## Tree
 |  |
@@ -624,6 +626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/RBP98/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/RBP98/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1755-defuse-the-bomb](https://github.com/RBP98/Leetcode/tree/master/1755-defuse-the-bomb) |
 ## Two Pointers
 |  |
@@ -701,6 +704,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/RBP98/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
+| [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1940-maximum-xor-for-each-query](https://github.com/RBP98/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
