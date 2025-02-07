@@ -27,9 +27,7 @@ class Solution {
             front = front.next;
         }
 
-        ListNode temp = curr.next.next;
-        curr.next = temp;
-
+        curr.next = curr.next.next;
         return dummy.next;
     }
 }
