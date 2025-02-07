@@ -22,17 +22,16 @@ class Solution {
     Map<Node, Node> map = new HashMap<>();
 
     public Node cloneGraph(Node node) {
-
         if(node == null) return null;
-       
+
         if(map.containsKey(node)){
             return map.get(node);
         }
-        Node newNode = new Node(node.val, new ArrayList());
 
+        Node newNode = new Node(node.val, new ArrayList<>());
         map.put(node, newNode);
-        for(Node n : node.neighbors){
-            newNode.neighbors.add(cloneGraph(n));
+        for(Node val: node.neighbors){
+            newNode.neighbors.add(cloneGraph(val));
         }
         return newNode;
     }
