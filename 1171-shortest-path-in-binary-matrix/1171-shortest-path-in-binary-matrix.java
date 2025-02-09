@@ -50,9 +50,6 @@ class Solution {
             currDistance++;
 
         }
-        // if(visited[m - 1][n - 1] == false){
-        // currDistance = -1;
-        // }
 
         return -1;
     }
