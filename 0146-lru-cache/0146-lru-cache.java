@@ -1,72 +1,65 @@
-class Node {
+class ListNode{
     int key;
-    int val;
-    Node next;
-    Node prev;
-    public Node(){
-        
-    }
-    public Node(int key, int val) {
+    int value;
+    ListNode prev;
+    ListNode next;
+    public ListNode(int key, int value){
         this.key = key;
-        this.val = val;
+        this.value = value;
     }
 }
 
 class LRUCache {
-    private Map<Integer, Node> map = new HashMap<>();
     int capacity;
-    Node head = new Node();
-    Node tail = new Node();
-
+    Map<Integer, ListNode> map;
+    ListNode head;
+    ListNode tail;
     public LRUCache(int capacity) {
         this.capacity = capacity;
+        map = new HashMap<>();
+        head = new ListNode(-1,-1);
+        tail = new ListNode(-1,-1);
         head.next = tail;
         tail.prev = head;
     }
+    
+    public void add(ListNode value){
+        ListNode end = tail.prev;
+        end.next = value;
+        value.prev = end;
+        value.next = tail;
+        tail.prev = value;
 
-    private void deleteFromCache(Node node) {
-        Node prevNode = node.prev;
-        Node nextNode = node.next;
-        prevNode.next = nextNode;
-        nextNode.prev = prevNode;
     }
 
-    private void insertToCache(Node node) {
-        Node currLatest = head.next;
-        head.next = node;
-        node.next = currLatest;
-        node.prev = head;
-        currLatest.prev = node;
+    public void remove(ListNode node){
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
     }
 
     public int get(int key) {
-        if (!map.containsKey(key)) {
+        if(!map.containsKey(key)){
             return -1;
         }
-        Node node = map.get(key);
-        deleteFromCache(node);
-        insertToCache(node);
-
-        return node.val;
+        ListNode node = map.get(key); 
+        remove(node);
+        add(node);
+        return node.value;
     }
-
+    
     public void put(int key, int value) {
-        if (map.containsKey(key)) {
-            Node node = map.get(key);
-            node.val = value;
-            deleteFromCache(node);
-            insertToCache(node);
-        } else {
-            if (map.size() == capacity) {
-                Node node = tail.prev;
-                map.remove(node.key);
-                deleteFromCache(node);
-            }
-            Node node = new Node(key, value);
-            map.put(key, node);
-            insertToCache(node);
+        if(map.containsKey(key)){
+            remove(map.get(key));
         }
+        
+        ListNode node = new ListNode(key, value);
+        map.put(key, node);
+        add(node);    
 
+        if(map.size() > capacity){
+            map.remove(head.next.key);
+            remove(head.next);
+        }
     }
 }
 
