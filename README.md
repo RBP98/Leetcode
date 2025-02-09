@@ -421,6 +421,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/RBP98/Leetcode/tree/master/0202-happy-number) |
 | [0227-basic-calculator-ii](https://github.com/RBP98/Leetcode/tree/master/0227-basic-calculator-ii) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
+| [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0415-add-strings](https://github.com/RBP98/Leetcode/tree/master/0415-add-strings) |
 | [0795-k-th-symbol-in-grammar](https://github.com/RBP98/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
@@ -571,6 +572,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0191-number-of-1-bits](https://github.com/RBP98/Leetcode/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0795-k-th-symbol-in-grammar](https://github.com/RBP98/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1940-maximum-xor-for-each-query](https://github.com/RBP98/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
