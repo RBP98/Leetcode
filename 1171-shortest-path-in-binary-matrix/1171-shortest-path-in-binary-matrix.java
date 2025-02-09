@@ -11,6 +11,9 @@ class Pair {
 class Solution {
     private int bfs(int[][] grid, boolean[][] visited, int m, int n) {
         Queue<Pair> queue = new LinkedList<>();
+        int[][] directions = new int[][] { { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 }, { -1, -1 }, { -1, 0 }, { -1, 1 } };
+
+
         int currDistance = 1;
         queue.add(new Pair(0, 0));
 
@@ -26,7 +29,6 @@ class Solution {
                 int row = cell.first;
                 int col = cell.second;
 
-                int[][] directions = new int[][] { { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 }, { -1, -1 }, { -1, 0 }, { -1, 1 } };
 
                 if (row == m - 1 && col == n - 1)
                     return currDistance;
