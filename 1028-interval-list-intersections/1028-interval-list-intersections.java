@@ -19,10 +19,6 @@ class Solution {
                 n++;
             }
         }
-        int[][] opArr = new int[output.size()][2];
-        for(int i = 0; i < output.size(); i++){
-            opArr[i] = output.get(i);
-        }
-    return opArr;
+    return output.toArray(new int[output.size()][]);
     }
 }
