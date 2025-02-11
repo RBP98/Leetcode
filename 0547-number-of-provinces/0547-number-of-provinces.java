@@ -40,15 +40,19 @@ class Solution {
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         DisjointSet ds = new DisjointSet(n);
-        int connectedComps = n;
         for(int i = 0; i < n; i++){
             for(int j = i + 1; j < n; j++){
-                if(isConnected[i][j] == 1 && ds.findParent(i) != ds.findParent(j)){
-                    ds.union(i, j);
-                    connectedComps--;
+                if(isConnected[i][j] == 1){
+                    ds.union(i + 1, j + 1);
                 }
             }
         }
-        return connectedComps;
+        int count = 0;
+        for(int i = 1; i < ds.parent.size(); i++){
+            if(ds.parent.get(i) == i){
+                count++;
+            }
+        }
+        return count;
     }
 }
