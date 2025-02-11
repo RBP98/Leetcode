@@ -49,11 +49,6 @@ class Solution {
                 }
             }
         }
-        // for(int i = 1; i < ds.parent.size(); i++){
-        //     if(ds.parent.get(i) == i){
-        //         count++;
-        //     }
-        // }
         return connectedComps;
     }
 }
