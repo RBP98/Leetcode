@@ -16,7 +16,7 @@ class DisjointSet{
             return node;
         }
         int grandParent = findParent(parent.get(node));
-        parent.set(node, grandParent);
+        // parent.set(node, grandParent);
         return grandParent;
     }
 
