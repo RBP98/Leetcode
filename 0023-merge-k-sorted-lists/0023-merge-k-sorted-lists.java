@@ -10,18 +10,17 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        
         if (lists.length == 0) return null;
-
         int k = lists.length;
+
         while(k > 1){
             int newK = (k + 1) / 2;
-
             for(int i = 0; i < k / 2; i++){
                 lists[i] = mergeTwoLists(lists[i], lists[i + (k + 1)/2]);
             }
             k = newK;
         }
+        
         return lists[0];
     }
 
