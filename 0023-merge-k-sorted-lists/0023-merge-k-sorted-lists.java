@@ -1,43 +1,52 @@
-// Definition for singly-linked list.
-// class ListNode {
-//     int val;
-//     ListNode next;
-//     ListNode() {}
-//     ListNode(int val) { this.val = val; }
-//     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-// }
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        int amount = lists.length;
-        int interval = 1;
-        while (interval < amount) {
-            for (int i = 0; i < amount - interval; i += interval * 2) {
-                lists[i] = merge2Lists(lists[i], lists[i + interval]);
+        
+        if (lists.length == 0) return null;
+
+        int k = lists.length;
+        while(k > 1){
+            int newK = (k + 1) / 2;
+
+            for(int i = 0; i < k / 2; i++){
+                lists[i] = mergeTwoLists(lists[i], lists[i + (k + 1)/2]);
             }
-            interval *= 2;
+            k = newK;
         }
-        return amount > 0 ? lists[0] : null;
+        return lists[0];
     }
 
-    public ListNode merge2Lists(ListNode l1, ListNode l2) {
-        ListNode head = new ListNode(0);
-        ListNode point = head;
-        while (l1 != null && l2 != null) {
-            if (l1.val <= l2.val) {
-                point.next = l1;
-                l1 = l1.next;
-            } else {
-                point.next = l2;
-                l2 = l1;
-                l1 = point.next.next;
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2){
+        ListNode dummy = new ListNode();
+        ListNode temp = dummy;
+
+        while(list1 != null && list2 != null){
+            if(list1.val < list2.val){
+                temp.next = list1;
+                temp = list1;
+                list1 = list1.next;
+            }else{
+                temp.next = list2;
+                temp = list2;
+                list2 = list2.next;
             }
-            point = point.next;
         }
-        if (l1 == null) {
-            point.next = l2;
-        } else {
-            point.next = l1;
+
+        if(list1 == null){
+            temp.next = list2;
+        }else if(list2 == null){
+            temp.next = list1;
         }
-        return head.next;
+
+        return dummy.next;
     }
 }
