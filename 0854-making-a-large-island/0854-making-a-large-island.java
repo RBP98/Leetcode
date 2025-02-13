@@ -53,9 +53,6 @@ class Solution {
                     if(newRow >= 0 && newCol >= 0 && newRow < n && newCol < n && grid[newRow][newCol] == 1){
                         int currNode = i * n + j;
                         int adjNode = newRow * n + newCol;
-
-                        System.out.println(currNode);
-                        System.out.println(adjNode);
                         ds.union(currNode, adjNode);
                     }
                 }
