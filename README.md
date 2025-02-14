@@ -434,6 +434,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0227-basic-calculator-ii](https://github.com/RBP98/Leetcode/tree/master/0227-basic-calculator-ii) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
 | [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
+| [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
 | [0415-add-strings](https://github.com/RBP98/Leetcode/tree/master/0415-add-strings) |
 | [0795-k-th-symbol-in-grammar](https://github.com/RBP98/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
@@ -496,6 +497,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0387-first-unique-character-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
+| [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
 | [0424-longest-repeating-character-replacement](https://github.com/RBP98/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
@@ -776,6 +778,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Randomized
 |  |
 | ------- |
+| [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 ## Line Sweep
 |  |
@@ -785,4 +788,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/RBP98/Leetcode/tree/master/0023-merge-k-sorted-lists) |
+## Reservoir Sampling
+|  |
+| ------- |
+| [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
 <!---LeetCode Topics End-->
