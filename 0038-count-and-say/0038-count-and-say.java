@@ -1,14 +1,13 @@
 class Solution {
     public String countAndSay(int n) {
-        StringBuilder ans = new StringBuilder();
-        ans.append("1");
+        String ans = "1";
         for(int i = 1; i < n; i++) {
             ans = RLE(ans);
         }
-        return ans.reverse().toString();
+        return ans;
     }
 
-    private StringBuilder RLE(StringBuilder s){
+    private String RLE(String s){
         int i = 0;
         int ans = 0;
         StringBuilder sb = new StringBuilder();
@@ -17,11 +16,11 @@ class Solution {
             while(i + groupLength < s.length() && s.charAt(i) == s.charAt(i + groupLength)){
                 groupLength++;
             }
+            sb.append(groupLength);
             sb.append(s.charAt(i));
-            sb.append(Integer.toString(groupLength));
-
+      
             i = i + groupLength;
         }
-        return sb;
+        return sb.toString();
     }
 }
