@@ -1,24 +1,17 @@
 class Solution {
     public int findTheWinner(int n, int k) {
-        Queue<Integer> queue = new LinkedList<>();
-        for(int i = 1; i <= n; i++) queue.add(i);
-        int count = 1;
-        while(queue.size() > 1){
-           
-            if(count != k){
-                queue.add(queue.poll());
-                // System.out.println();
-
-            }else{
-                queue.poll();
-                // System.out.println("Remove " + queue.poll());
-                count = 0;
-            }
-            count++;
-
-
+        Queue<Integer> circle = new LinkedList<>();
+        for(int i = 1; i <= n; i++){
+            circle.add(i);
         }
-        // System.out.println(queue.size());
-        return queue.poll();
+
+        while(circle.size() > 1){
+            for(int i = 0; i < k - 1; i++){
+                circle.add(circle.remove());
+            }
+
+            circle.remove();
+        }
+        return circle.peek();
     }
 }
