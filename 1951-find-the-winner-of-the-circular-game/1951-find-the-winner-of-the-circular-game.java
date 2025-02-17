@@ -1,17 +1,10 @@
 class Solution {
     public int findTheWinner(int n, int k) {
-        Queue<Integer> circle = new ArrayDeque<>();
-        for(int i = 1; i <= n; i++){
-            circle.add(i);
-        }
+        int ans = 0;
+        for(int i = 2; i <= n; i++){
+            ans = (ans + k) % i;
+        }  
 
-        while(circle.size() > 1){
-            for(int i = 0; i < k - 1; i++){
-                circle.add(circle.remove());
-            }
-
-            circle.remove();
-        }
-        return circle.peek();
+        return ans + 1;
     }
 }
