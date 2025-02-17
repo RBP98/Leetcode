@@ -519,6 +519,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/RBP98/Leetcode/tree/master/0013-roman-to-integer) |
 | [0020-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/RBP98/Leetcode/tree/master/0022-generate-parentheses) |
+| [0038-count-and-say](https://github.com/RBP98/Leetcode/tree/master/0038-count-and-say) |
 | [0043-multiply-strings](https://github.com/RBP98/Leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/RBP98/Leetcode/tree/master/0049-group-anagrams) |
 | [0071-simplify-path](https://github.com/RBP98/Leetcode/tree/master/0071-simplify-path) |
