@@ -1,37 +1,33 @@
 class Solution {
     public boolean backspaceCompare(String s, String t) {
-        Stack<Character> stack1 = new Stack<>();
-        Stack<Character> stack2 = new Stack<>();
-        
-        for(int i = 0; i < s.length(); i++){
-            if(s.charAt(i) != '#'){
-                stack1.push(s.charAt(i));
-            }
-            else{
-                if(!stack1.isEmpty()){
-                    stack1.pop();
-                } 
-            }
-        }
-        for(int i = 0; i < t.length(); i++){
-            if(t.charAt(i) != '#'){
-                stack2.push(t.charAt(i));
-            }
-            else{
-                if(!stack2.isEmpty()){
-                    stack2.pop();
-                } 
-            }
-        }
+        int i = s.length() - 1;
+        int j = t.length() - 1;
+        while(i >= 0 || j >= 0){
+            i = nextValidIndex(s, i);
+            j = nextValidIndex(t, j);
 
-        if(stack1.size() != stack2.size()) return false;
-        int size = stack1.size();
-        for(int i = 0; i < size; i++){
-            if(stack1.pop() != stack2.pop()){
-                return false;
-            }
+            if(i < 0 && j < 0) return true;
+            if(i < 0 || j < 0 || s.charAt(i) != t.charAt(j)) return false;
+
+            i--;
+            j--;
         }
         return true;
     }
     
+    private int nextValidIndex(String str, int index){
+        int backCount = 0;
+        while(index >= 0){
+            if(str.charAt(index) == '#'){
+                backCount++;
+                index--;
+            }else if(backCount > 0){
+                backCount--;
+                index--;
+            }else{
+                break;
+            }
+        }
+        return index;
+    }
 }
