@@ -429,6 +429,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0043-multiply-strings](https://github.com/RBP98/Leetcode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/RBP98/Leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/RBP98/Leetcode/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/RBP98/Leetcode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/RBP98/Leetcode/tree/master/0066-plus-one) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/RBP98/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/RBP98/Leetcode/tree/master/0202-happy-number) |
@@ -714,6 +715,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0042-trapping-rain-water](https://github.com/RBP98/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/RBP98/Leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RBP98/Leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/RBP98/Leetcode/tree/master/0062-unique-paths) |
 | [0085-maximal-rectangle](https://github.com/RBP98/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/RBP98/Leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/RBP98/Leetcode/tree/master/0119-pascals-triangle-ii) |
@@ -806,4 +808,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/RBP98/Leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
