@@ -533,6 +533,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0043-multiply-strings](https://github.com/RBP98/Leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/RBP98/Leetcode/tree/master/0049-group-anagrams) |
 | [0071-simplify-path](https://github.com/RBP98/Leetcode/tree/master/0071-simplify-path) |
+| [0091-decode-ways](https://github.com/RBP98/Leetcode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/RBP98/Leetcode/tree/master/0127-word-ladder) |
 | [0227-basic-calculator-ii](https://github.com/RBP98/Leetcode/tree/master/0227-basic-calculator-ii) |
@@ -727,6 +728,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0062-unique-paths](https://github.com/RBP98/Leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/RBP98/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0085-maximal-rectangle](https://github.com/RBP98/Leetcode/tree/master/0085-maximal-rectangle) |
+| [0091-decode-ways](https://github.com/RBP98/Leetcode/tree/master/0091-decode-ways) |
 | [0118-pascals-triangle](https://github.com/RBP98/Leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/RBP98/Leetcode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RBP98/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
