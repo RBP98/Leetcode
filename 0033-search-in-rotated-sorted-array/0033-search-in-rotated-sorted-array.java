@@ -7,7 +7,7 @@ class Solution {
             int mid = low + (high - low)/2;
             if(target == nums[mid]){
                 return mid;
-            }else if(nums[mid] <= nums[high]){
+            }else if(nums[mid] < nums[high]){
                 if(nums[mid] < target && target <= nums[high]){
                     low = mid + 1;
                 }else{
