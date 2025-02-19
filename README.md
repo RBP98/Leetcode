@@ -436,6 +436,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/RBP98/Leetcode/tree/master/0202-happy-number) |
 | [0227-basic-calculator-ii](https://github.com/RBP98/Leetcode/tree/master/0227-basic-calculator-ii) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
+| [0263-ugly-number](https://github.com/RBP98/Leetcode/tree/master/0263-ugly-number) |
 | [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
 | [0415-add-strings](https://github.com/RBP98/Leetcode/tree/master/0415-add-strings) |
