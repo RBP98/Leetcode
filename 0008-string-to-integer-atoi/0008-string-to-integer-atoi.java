@@ -15,9 +15,8 @@ class Solution {
             i++;
         }
 
-        while(i < s.length() && Character.isDigit(s.charAt(i))){
+        while(i < s.length() && s.charAt(i) - '0' >= 0 && s.charAt(i) - '0' <= 9){
             int value = s.charAt(i) - '0';
-            
             if(ans > Integer.MAX_VALUE/10 || (ans == Integer.MAX_VALUE/10 && value > Integer.MAX_VALUE%10)){
                 if(sign == 1) 
                     return Integer.MAX_VALUE;
