@@ -1,8 +1,6 @@
 class Solution {
     public boolean isUgly(int n) {
         if(n <= 0) return false;
-
-        // n = Math.abs(n);
         while(n > 1){
             if(n % 2 == 0) n = n / 2;
             else if(n % 3 == 0) n = n / 3;
