@@ -263,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0283-move-zeroes](https://github.com/RBP98/Leetcode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0414-third-maximum-number](https://github.com/RBP98/Leetcode/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
@@ -582,6 +583,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0414-third-maximum-number](https://github.com/RBP98/Leetcode/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
