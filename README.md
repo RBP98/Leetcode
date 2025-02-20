@@ -280,6 +280,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1127-last-stone-weight](https://github.com/RBP98/Leetcode/tree/master/1127-last-stone-weight) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/RBP98/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/RBP98/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
+| [1514-minimum-value-to-get-positive-step-by-step-sum](https://github.com/RBP98/Leetcode/tree/master/1514-minimum-value-to-get-positive-step-by-step-sum) |
 | [1524-string-matching-in-an-array](https://github.com/RBP98/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1646-kth-missing-positive-number](https://github.com/RBP98/Leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
@@ -791,6 +792,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
 | [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1514-minimum-value-to-get-positive-step-by-step-sum](https://github.com/RBP98/Leetcode/tree/master/1514-minimum-value-to-get-positive-step-by-step-sum) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1940-maximum-xor-for-each-query](https://github.com/RBP98/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
