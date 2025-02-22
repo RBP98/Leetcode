@@ -550,6 +550,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0227-basic-calculator-ii](https://github.com/RBP98/Leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0387-first-unique-character-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
+| [0392-is-subsequence](https://github.com/RBP98/Leetcode/tree/master/0392-is-subsequence) |
 | [0415-add-strings](https://github.com/RBP98/Leetcode/tree/master/0415-add-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/RBP98/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -728,6 +729,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/RBP98/Leetcode/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/RBP98/Leetcode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0392-is-subsequence](https://github.com/RBP98/Leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/RBP98/Leetcode/tree/master/0443-string-compression) |
 | [0647-palindromic-substrings](https://github.com/RBP98/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/RBP98/Leetcode/tree/master/0680-valid-palindrome-ii) |
@@ -752,6 +754,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RBP98/Leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0198-house-robber](https://github.com/RBP98/Leetcode/tree/master/0198-house-robber) |
 | [0264-ugly-number-ii](https://github.com/RBP98/Leetcode/tree/master/0264-ugly-number-ii) |
+| [0392-is-subsequence](https://github.com/RBP98/Leetcode/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0647-palindromic-substrings](https://github.com/RBP98/Leetcode/tree/master/0647-palindromic-substrings) |
 | [1013-fibonacci-number](https://github.com/RBP98/Leetcode/tree/master/1013-fibonacci-number) |
