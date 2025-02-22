@@ -3,12 +3,14 @@ class Solution {
         int m = matrix.length;
         int n = matrix[0].length;
 
-        for(int i = 1; i < m; i++){
+        int[] prevRow = null;
+        for(int[] row: matrix){
             for(int j = 1; j < n; j++){
-                if(matrix[i][j] != matrix[i - 1][j - 1]){
+                if(prevRow != null && prevRow[j - 1] != row[j]){
                     return false;
                 }
             }
+            prevRow = row;
         }
         return true;
     }
