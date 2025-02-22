@@ -17,20 +17,18 @@ class Solution {
     int ans;
     public int rangeSumBST(TreeNode root, int low, int high) {
         ans = 0;
-        dfs(root, low, high);
+        helper(root, low, high);
         return ans;
     }
 
-    private void dfs(TreeNode node, int low, int high){
-        if(node != null){
-            if(low <= node.val && node.val <= high){
-                ans = ans + node.val;
+    private void helper(TreeNode root, int low, int high){
+        if(root != null){
+            if(low <= root.val && root.val <= high) ans += root.val;
+            if(root.val > low){
+                helper(root.left, low, high);
             }
-            if(low < node.val){
-                dfs(node.left, low, high);
-            }
-            if(high > node.val){
-                dfs(node.right, low, high);
+            if(root.val < high){
+                helper(root.right, low, high);
             }
         }
     }
