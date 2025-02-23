@@ -19,10 +19,12 @@ class Solution {
         for(int i = arrayOfLists.length - 1; i >= 0; i--){
             if(arrayOfLists[i] != null){
                 for(int j: arrayOfLists[i]){
+                    
                     if(k == 0){
                         return result;
                     }
-                    result[--k] = j;
+                    result[k - 1] = j;
+                    k--;
                 }
             }
         }
