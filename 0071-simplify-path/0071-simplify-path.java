@@ -1,6 +1,5 @@
 class Solution {
     public String simplifyPath(String path) {
-        StringBuilder sb = new StringBuilder();
         Stack<String> stack = new Stack();
         for(String s: path.split("/")){
             if(s.equals(".") || s.length() == 0){
@@ -15,7 +14,8 @@ class Solution {
             }
             
         }
-
+        StringBuilder sb = new StringBuilder();
+    
         for(String s: stack){
             sb.append("/");
             sb.append(s);
