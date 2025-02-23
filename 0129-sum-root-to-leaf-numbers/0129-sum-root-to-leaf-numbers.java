@@ -15,21 +15,19 @@
  */
 class Solution {
     int totalSum = 0;
-
-    private void preorder(TreeNode node, int curr){
-        if(node != null){
-            curr = curr * 10 + node.val;
-            if(node.left == null && node.right == null){
-                totalSum = totalSum + curr;
-            }
-            preorder(node.left, curr);
-            preorder(node.right, curr);
-        }
-    }
-
     public int sumNumbers(TreeNode root) {
+        
         preorder(root, 0);
         return totalSum;
-
+    }
+    private void preorder(TreeNode root, int curr){
+        if(root != null){
+            curr = curr * 10 + root.val;
+            if(root.left == null && root.right == null){
+                totalSum = totalSum + curr;
+            }
+            preorder(root.left, curr);
+            preorder(root.right, curr);
+        }
     }
 }
