@@ -14,7 +14,7 @@ class Solution {
             }
         }
 
-        for(int i = 0; i < freqArr.length; i++){
+        for(int i = 0; i < 26; i++){
             while(freqArr[i] != 0){
                 sb.append((char)(i + 'a'));
                 freqArr[i]--;
