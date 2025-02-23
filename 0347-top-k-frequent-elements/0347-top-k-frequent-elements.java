@@ -23,8 +23,8 @@ class Solution {
                     if(k == 0){
                         return result;
                     }
-                    result[--k] = j;
-                    
+                    result[k - 1] = j;
+                    k--;
                 }
             }
         }
