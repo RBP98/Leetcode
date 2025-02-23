@@ -13,21 +13,35 @@
  *     }
  * }
  */
-class Solution {
-    int totalSum = 0;
-    public int sumNumbers(TreeNode root) {
-        
-        preorder(root, 0);
-        return totalSum;
+ 
+class Pair{
+    TreeNode node;
+    Integer curr;
+    public Pair(TreeNode node, Integer curr){
+        this.node = node;
+        this.curr = curr;
     }
-    private void preorder(TreeNode root, int curr){
-        if(root != null){
-            curr = curr * 10 + root.val;
-            if(root.left == null && root.right == null){
-                totalSum = totalSum + curr;
+}
+class Solution {
+    public int sumNumbers(TreeNode root) {
+        Deque<Pair> stack = new ArrayDeque<>();
+        stack.push(new Pair(root, 0));
+        int sum = 0;
+        while(!stack.isEmpty()){
+            Pair p = stack.pop();
+            TreeNode key = p.node;
+            int value = p.curr;
+            if(key != null){
+                value = value * 10 + key.val;
+                if(key.left == null && key.right == null){
+                    sum = sum + value;
+                }
+                stack.push(new Pair(key.right, value));
+                stack.push(new Pair(key.left, value));
             }
-            preorder(root.left, curr);
-            preorder(root.right, curr);
+            
         }
+
+        return sum;
     }
 }
