@@ -1,25 +1,25 @@
 class Solution {
     public String simplifyPath(String path) {
-        Stack<String> stack = new Stack<>();
-
-        for(String dir: path.split("/")){
-            if(dir.isEmpty() || dir.equals(".")){
+        StringBuilder sb = new StringBuilder();
+        Stack<String> stack = new Stack();
+        for(String s: path.split("/")){
+            if(s.equals(".") || s.length() == 0){
                 continue;
-            }else if(dir.equals("..")){
-                if(!stack.isEmpty()){
-                    stack.pop();
-                }
-            }else{
-                stack.push(dir);        
             }
+
+            if(s.equals("..") && !stack.isEmpty()){
+                stack.pop();
+            }
+            else if(!s.equals("..")){
+                stack.push(s);
+            }
+            
         }
 
-        StringBuilder canonicalPath = new StringBuilder();
         for(String s: stack){
-            canonicalPath.append('/');
-            canonicalPath.append(s);
+            sb.append("/");
+            sb.append(s);
         }
-
-    return stack.isEmpty() ? "/" : canonicalPath.toString();
+    return stack.isEmpty() ? "/" : sb.toString();
     }
 }
