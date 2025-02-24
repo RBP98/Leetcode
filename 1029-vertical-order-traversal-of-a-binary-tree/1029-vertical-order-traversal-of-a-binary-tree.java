@@ -34,24 +34,11 @@ class Solution {
             int level = t.level;
             int vertical = t.vertical;
             TreeNode node = t.node;
-            Map<Integer, PriorityQueue<TreeNode>> tempMap;    
-            PriorityQueue<TreeNode> pq; 
-            
-            if(map.containsKey(vertical)){
-                tempMap = map.get(vertical); 
-            }else{
-                tempMap = new TreeMap<>();
-                map.put(vertical, tempMap);
-            }
 
-            if(tempMap.containsKey(level)){
-                pq = tempMap.get(level);
-            }else{
-                pq = new PriorityQueue<>((a,b) -> Integer.compare(a.val, b.val));
-                tempMap.put(level, pq);
-            }
+            map.computeIfAbsent(vertical, k -> new TreeMap<>())
+               .computeIfAbsent(level, k -> new PriorityQueue<>((a,b) -> Integer.compare(a.val, b.val)))
+               .add(node);
 
-            pq.add(node);
             if(node.left != null){
                 queue.add(new Tuple(level + 1, vertical - 1, node.left));
             }
