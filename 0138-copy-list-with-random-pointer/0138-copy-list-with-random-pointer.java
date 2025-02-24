@@ -36,9 +36,10 @@ class Solution {
         ptr = head;
         Node newPtr = ptr.next;
         Node newHead = newPtr;
+
         while(ptr != null){
-            ptr.next = newPtr.next;
-            newPtr.next = newPtr.next != null ? ptr.next.next: null;
+            ptr.next = ptr.next.next;
+            newPtr.next = newPtr.next != null ? newPtr.next.next: null;
 
             ptr = ptr.next;
             newPtr = newPtr.next;
