@@ -30,34 +30,30 @@ class Solution {
         queue.add(new Tuple(0, 0, root));
 
         while(!queue.isEmpty()){
-            int size = queue.size();
-           
-            for(int i = 0; i < size; i++){
-                Tuple t = queue.poll();
-                int level = t.level;
-                int vertical = t.vertical;
-                TreeNode node = t.node;
+            Tuple t = queue.poll();
+            int level = t.level;
+            int vertical = t.vertical;
+            TreeNode node = t.node;
 
-                PriorityQueue<TreeNode> pq = new PriorityQueue<>((a,b) -> Integer.compare(a.val, b.val));
-                Map<Integer, PriorityQueue<TreeNode>> tempMap = new TreeMap<>();
-                if(map.containsKey(vertical)){
-                    tempMap = map.get(vertical); 
-                }
-                if(tempMap.containsKey(level)){
-                    pq = tempMap.get(level);
-                }
-
-                pq.add(node);
-                tempMap.put(level, pq);
-                map.put(vertical, tempMap);
-                if(node.left != null){
-                    queue.add(new Tuple(level + 1, vertical - 1, node.left));
-                }
-                if(node.right != null){
-                    queue.add(new Tuple(level + 1, vertical + 1, node.right));
-                }
-                
+            PriorityQueue<TreeNode> pq = new PriorityQueue<>((a,b) -> Integer.compare(a.val, b.val));
+            Map<Integer, PriorityQueue<TreeNode>> tempMap = new TreeMap<>();
+            if(map.containsKey(vertical)){
+                tempMap = map.get(vertical); 
             }
+            if(tempMap.containsKey(level)){
+                pq = tempMap.get(level);
+            }
+
+            pq.add(node);
+            tempMap.put(level, pq);
+            map.put(vertical, tempMap);
+            if(node.left != null){
+                queue.add(new Tuple(level + 1, vertical - 1, node.left));
+            }
+            if(node.right != null){
+                queue.add(new Tuple(level + 1, vertical + 1, node.right));
+            }
+                
 
         }
         List<List<Integer>> output = new ArrayList<>();
