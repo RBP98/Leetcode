@@ -25,7 +25,7 @@ class Tuple{
 }
 class Solution {
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        Map<Integer, Map<Integer, PriorityQueue<TreeNode>>> map = new TreeMap<>();
+        Map<Integer, Map<Integer, PriorityQueue<Integer>>> map = new TreeMap<>();
         Queue<Tuple> queue = new ArrayDeque<>();
         queue.add(new Tuple(0, 0, root));
 
@@ -36,8 +36,8 @@ class Solution {
             TreeNode node = t.node;
 
             map.computeIfAbsent(vertical, k -> new TreeMap<>())
-               .computeIfAbsent(level, k -> new PriorityQueue<>((a,b) -> Integer.compare(a.val, b.val)))
-               .add(node);
+               .computeIfAbsent(level, k -> new PriorityQueue<>())
+               .add(node.val);
 
             if(node.left != null){
                 queue.add(new Tuple(level + 1, vertical - 1, node.left));
@@ -49,11 +49,11 @@ class Solution {
 
         }
         List<List<Integer>> output = new ArrayList<>();
-        for(Map<Integer, PriorityQueue<TreeNode>> temp: map.values()){
+        for(Map<Integer, PriorityQueue<Integer>> temp: map.values()){
             List<Integer> list  = new ArrayList<>();
-            for(PriorityQueue<TreeNode> pq: temp.values()){
+            for(PriorityQueue<Integer> pq: temp.values()){
                 while(!pq.isEmpty()){
-                    list.add(pq.poll().val);
+                    list.add(pq.poll());
                 }
                 
             }
