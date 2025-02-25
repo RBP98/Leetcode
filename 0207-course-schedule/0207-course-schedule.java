@@ -9,15 +9,7 @@ class Solution {
         for(int i = 0; i < prerequisites.length; i++){
             adj.get(prerequisites[i][0]).add(prerequisites[i][1]);
         }
-
-        // for(List<Integer> a: adj){
-        //     System.out.println(a);
-        // }
-
-        // for(int i : indegree){
-        //     System.out.println(i + " ");
-        // }
-
+        
         int[] indegree = new int[numCourses];
 
         for(int i = 0; i < numCourses; i++){
@@ -28,12 +20,7 @@ class Solution {
         Queue<Integer> queue = new ArrayDeque<>();
         for(int i = 0; i < numCourses; i++){
             if(indegree[i] == 0){
-                queue.add(i);
-                
-                // for(int j: adj.get(i)){
-                //     indegree[j]--;
-                // }
-                
+                queue.add(i);             
             }
         }
 
@@ -47,14 +34,6 @@ class Solution {
                 }
             }
         }
-
-        // for(int i : indegree){
-        //     if( i != 0) return false;
-        //     // System.out.println(i + " ");
-        // }
-
-        
-
         return numCourses == 0;
     }
 }
