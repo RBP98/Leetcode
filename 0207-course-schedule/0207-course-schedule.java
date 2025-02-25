@@ -1,7 +1,8 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<List<Integer>> adj = new ArrayList<>();
-        for(int i = 0 ; i < numCourses; i++){
+        
+        for(int i = 0; i < numCourses; i++){
             adj.add(new ArrayList<>());
         }
 
@@ -9,29 +10,50 @@ class Solution {
             adj.get(prerequisites[i][0]).add(prerequisites[i][1]);
         }
 
+        // for(List<Integer> a: adj){
+        //     System.out.println(a);
+        // }
+
+        // for(int i : indegree){
+        //     System.out.println(i + " ");
+        // }
+
         int[] indegree = new int[numCourses];
+
         for(int i = 0; i < numCourses; i++){
             for(int j: adj.get(i)){
                 indegree[j]++;
             }
         }
-        Queue<Integer> queue = new LinkedList<>();
-        for(int i = 0; i < indegree.length; i++){
+        Queue<Integer> queue = new ArrayDeque<>();
+        for(int i = 0; i < numCourses; i++){
             if(indegree[i] == 0){
                 queue.add(i);
+                
+                // for(int j: adj.get(i)){
+                //     indegree[j]--;
+                // }
+                
             }
         }
 
         while(!queue.isEmpty()){
-            int temp = queue.poll();
-            numCourses--;
-            for(int a : adj.get(temp)){
-                indegree[a]--;
-                if(indegree[a] == 0){
-                    queue.add(a);
+            int val = queue.poll();
+            for(int j: adj.get(val)){
+                indegree[j]--;
+                if(indegree[j] == 0){
+                    queue.add(j);
                 }
             }
         }
-    return numCourses == 0;
+
+        for(int i : indegree){
+            if( i != 0) return false;
+            // System.out.println(i + " ");
+        }
+
+        
+
+        return true;
     }
 }
