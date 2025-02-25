@@ -9,8 +9,8 @@ class Solution {
             }
         }
         StringBuilder sb = new StringBuilder();
-        for(char c: stack){
-            sb.append(c);
+        while(!stack.isEmpty()){
+            sb.append(stack.pop());
         }
 
         return sb.reverse().toString();
