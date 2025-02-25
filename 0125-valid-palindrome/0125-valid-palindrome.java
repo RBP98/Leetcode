@@ -1,16 +1,20 @@
 class Solution {
     public boolean isPalindrome(String s) {
         StringBuilder sanitized = new StringBuilder();
-        for(int i = 0; i < s.length(); i++){
-            if(Character.isLetterOrDigit(s.charAt(i))){
-                sanitized.append(Character.toLowerCase(s.charAt(i)));
+
+        for(char c: s.toCharArray()){
+            if(Character.isLetterOrDigit(c)){
+                sanitized.append(Character.toLowerCase(c));
             }
         }
-        String sanitizedString = sanitized.toString();
+
+        String saniStr = sanitized.toString();
+
         int left = 0;
-        int right = sanitizedString.length()-1;
+        int right = saniStr.length() - 1;
+
         while(left < right){
-            if(sanitizedString.charAt(left) != sanitizedString.charAt(right)){
+            if(saniStr.charAt(left) != saniStr.charAt(right)){
                 return false;
             }
             left++;
