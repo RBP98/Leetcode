@@ -39,6 +39,7 @@ class Solution {
 
         while(!queue.isEmpty()){
             int val = queue.poll();
+            numCourses--;
             for(int j: adj.get(val)){
                 indegree[j]--;
                 if(indegree[j] == 0){
@@ -47,13 +48,13 @@ class Solution {
             }
         }
 
-        for(int i : indegree){
-            if( i != 0) return false;
-            // System.out.println(i + " ");
-        }
+        // for(int i : indegree){
+        //     if( i != 0) return false;
+        //     // System.out.println(i + " ");
+        // }
 
         
 
-        return true;
+        return numCourses == 0;
     }
 }
