@@ -12,11 +12,12 @@ class ListNode{
 
 class LRUCache {
     
-    Map<Integer, ListNode> map = new HashMap<>();
+    Map<Integer, ListNode> map;
     int capacity;
     ListNode head;
     ListNode tail;
     public LRUCache(int capacity) {
+        map = new HashMap<>();
         this.capacity = capacity;
         head = new ListNode(-1,-1);
         tail = new ListNode(-1,-1);
