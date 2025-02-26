@@ -12,8 +12,8 @@ class Solution {
                 currentNumber = (currentNumber * 10) + currChar - '0';
             }
 
-            if(currChar == '+' || currChar == '-' || 
-               currChar == '*' || currChar == '/' || i == s.length() - 1){
+            if(!Character.isDigit(currChar) && 
+               !Character.isWhitespace(currChar) || i == s.length() - 1){
                 if(operator == '+'){
                     result +=lastNumber;
                     lastNumber = currentNumber;
