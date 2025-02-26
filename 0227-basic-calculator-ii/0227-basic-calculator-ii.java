@@ -14,34 +14,34 @@ class Solution {
 
             if(currChar == '+' || currChar == '-' || 
                currChar == '*' || currChar == '/' || i == s.length() - 1){
-                 switch (operator) {
-                    case '+':
-                        result += lastNumber;
-                        lastNumber = currentNumber;
-                        break;
-                    case '-':
-                        result += lastNumber;
-                        lastNumber = -currentNumber;
-                        break;
-                    case '*':
-                        lastNumber *= currentNumber;
-                        break;
-                    case '/':
-                        lastNumber /= currentNumber;
-                        break;
-                }
-
-                // if(operator == '+'){
-                //     result +=lastNumber;
-                //     lastNumber = currentNumber;
-                // }else if(operator == '-'){
-                //     result +=lastNumber;
-                //     lastNumber = -currentNumber;
-                // }else if(operator == '*'){
-                //     lastNumber = lastNumber * currentNumber;
-                // }else if(operator == '/'){
-                //     lastNumber = lastNumber / currentNumber;
+                //  switch (operator) {
+                //     case '+':
+                //         result += lastNumber;
+                //         lastNumber = currentNumber;
+                //         break;
+                //     case '-':
+                //         result += lastNumber;
+                //         lastNumber = -currentNumber;
+                //         break;
+                //     case '*':
+                //         lastNumber *= currentNumber;
+                //         break;
+                //     case '/':
+                //         lastNumber /= currentNumber;
+                //         break;
                 // }
+
+                if(operator == '+'){
+                    result +=lastNumber;
+                    lastNumber = currentNumber;
+                }else if(operator == '-'){
+                    result +=lastNumber;
+                    lastNumber = -currentNumber;
+                }else if(operator == '*'){
+                    lastNumber = lastNumber * currentNumber;
+                }else if(operator == '/'){
+                    lastNumber = lastNumber / currentNumber;
+                }
 
                 operator = currChar;
                 currentNumber = 0;
