@@ -1,7 +1,7 @@
 class Solution {
     public String minRemoveToMakeValid(String s) {
         
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         Set<Integer> set = new HashSet<>();
 
         for(int i = 0; i < s.length(); i++){
