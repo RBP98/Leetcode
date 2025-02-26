@@ -1,5 +1,4 @@
 class Solution {
-    
     public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
@@ -11,19 +10,18 @@ class Solution {
         map.put('M', 1000);
 
         int n = s.length();
-        
-        char next = s.charAt(n - 1);
-        int total = map.get(next);
+        char last = s.charAt(n - 1);
+        int total = map.get(last);
 
         for(int i = n - 2; i >= 0; i--){
             char curr = s.charAt(i);
-            if(map.get(curr) < map.get(next)){
+            if(map.get(curr) < map.get(last)){
                 total = total - map.get(curr);
             }else{
                 total = total + map.get(curr);
             }
-            next = curr;
-        }  
-        return total;  
+            last = curr;
+        }
+        return total;
     }
 }
