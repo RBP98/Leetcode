@@ -1,38 +1,39 @@
 class Solution {
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<Integer>();
-        int currNum = 0;
-        char operator = '+';
-          
-        for(int i = 0; i < s.length(); i++){
-            char curr = s.charAt(i);
-            StringBuilder sb = new StringBuilder();
-            sb.append(curr);
-            if(Character.isDigit(curr)){
-                currNum = 10 * currNum + (curr - '0');    
-            }
-            if("*/-+".contains(sb.toString()) || i == s.length() - 1){
-                if(operator == '-'){
-                    stack.push(-currNum);
-                }
-                else if(operator == '+'){
-                    stack.push(currNum);
-                }
-                else if(operator == '*'){
-                    stack.push(stack.pop() * currNum);
-                }
-                else if(operator == '/'){
-                    stack.push(stack.pop() / currNum);
-                }
-            operator = curr;
-            currNum = 0;
-            }
-        }
+        int lastNumber = 0;
+        int currentNumber = 0;
 
-        int res = 0;
-        while(!stack.isEmpty()){
-            res = res + stack.pop();
+        int result = 0;
+        char operator = '+';
+        for(int i = 0; i < s.length(); i++){
+            char currChar = s.charAt(i);
+
+            if(Character.isDigit(currChar)){
+                currentNumber = (currentNumber * 10) + currChar - '0';
+            }
+
+            if(currChar == '+' || currChar == '-' || 
+               currChar == '*' || currChar == '/' || i == s.length() - 1){
+                if(operator == '+'){
+                    result +=lastNumber;
+                    lastNumber = currentNumber;
+                }else if(operator == '-'){
+                    result +=lastNumber;
+                    lastNumber = -currentNumber;
+                }else if(operator == '*'){
+                    lastNumber = lastNumber * currentNumber;
+                }else if(operator == '/'){
+                    lastNumber = lastNumber / currentNumber;
+                }
+
+                operator = currChar;
+                currentNumber = 0;
+
+            }
+            
+            
         }
-        return res;
+        result +=lastNumber;
+        return result;
     }
 }
