@@ -1,23 +1,33 @@
 class Solution {
     public int compress(char[] chars) {
-        int ans = 0;
         int i = 0;
+        int index = 0;
         while(i < chars.length){
-            int groupLength = 1;
-            char curr = chars[i];
-            while(i + groupLength < chars.length && chars[i + groupLength] == curr){
-                groupLength++;
+            int count = 0;
+            char currentChar = chars[i];
+
+            while(i < chars.length && chars[i] == currentChar){
+                count++;
+                i++;
             }
-            chars[ans] = curr;
-            ans++;
-            if(groupLength > 1){
-                for(char c: Integer.toString(groupLength).toCharArray()){
-                    chars[ans] = c;
-                    ans++;
+
+            chars[index] = currentChar;
+            index++;
+
+            if(count > 1){
+                String s = Integer.toString(count);
+                for(int c = 0; c < s.length(); c++){
+                    chars[index] = s.charAt(c);
+                    index++;
                 }
+                
+                // while(count != 0){
+                //     chars[index] = (char)(count%10 + '0');
+                //     index++;
+                //     count = count/10;
+                // }
             }
-            i = i + groupLength;
         }
-        return ans;
+        return index;
     }
 }
