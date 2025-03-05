@@ -1,7 +1,7 @@
 class Solution {
     public int maxNumberOfBalloons(String text) {
     
-        int[] first = balloonMap("balloon");
+        int[] first = {1,1,2,2,1};
         int[] second = balloonMap(text);
 
         int minMod = Integer.MAX_VALUE;
