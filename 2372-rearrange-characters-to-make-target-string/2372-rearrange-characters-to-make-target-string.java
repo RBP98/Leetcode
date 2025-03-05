@@ -6,10 +6,10 @@ class Solution {
         int minMod = Integer.MAX_VALUE;
         
         for(int i = 0; i < 26; i++){
-            if(first[i] == 0){
-                continue;    
+            if(first[i] != 0){
+                minMod = Math.min(minMod, second[i] / first[i]);    
             }
-            minMod = Math.min(minMod, second[i] / first[i]);
+            
         }
       return minMod;
     }
