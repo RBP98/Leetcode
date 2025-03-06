@@ -14,7 +14,6 @@
  * }
  */
 class Solution {
-
     int sum = 0;
     public int rangeSumBST(TreeNode root, int low, int high) {
         helper(root, low, high);
@@ -30,9 +29,9 @@ class Solution {
         if(root.val > low){
             helper(root.left, low, high);
         }
+
         if(root.val < high){
             helper(root.right, low, high);
         }
-
     }
 }
