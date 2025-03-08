@@ -1,27 +1,31 @@
 class Solution {
     public int[] exclusiveTime(int n, List<String> logs) {
-        Stack<Integer> stack = new Stack<>();
+        
         String[] first = logs.get(0).split(":");
-        
+        Stack<Integer> stack = new Stack<>();
+
         stack.push(Integer.parseInt(first[0]));
-        int prev = Integer.parseInt(first[2]);
-        int res[] = new int[n];
-        
+        int prevTime = Integer.parseInt(first[2]);
+        int[] output = new int[n];
         for(int i = 1; i < logs.size(); i++){
-            String[] s = logs.get(i).split(":");
-            int currFunc = Integer.parseInt(s[0]);
-            int currTime = Integer.parseInt(s[2]);
-            if(s[1].equals("start")){
-                if(!stack.isEmpty()) 
-                    res[stack.peek()] += currTime - prev;
-                stack.push(currFunc);
-                prev = currTime; 
+            String[] currLog = logs.get(i).split(":");
+            int currTime = Integer.parseInt(currLog[2]);
+            int currID = Integer.parseInt(currLog[0]);
+
+            if(currLog[1].equals("start")){
+                if(!stack.isEmpty()){
+                    output[stack.peek()] = output[stack.peek()] + currTime - prevTime;
+                }
+                stack.push(currID);
+                prevTime = currTime;
             }else{
-                res[stack.peek()] += currTime - prev + 1;
-                stack.pop();
-                prev = currTime + 1;
+                output[currID] = output[currID] + currTime - prevTime + 1;
+                if(!stack.isEmpty()){
+                    stack.pop();
+                }
+                prevTime = currTime + 1;
             }
         }
-        return res;
+        return output;
     }
 }
