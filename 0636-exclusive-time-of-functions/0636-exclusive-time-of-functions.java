@@ -20,9 +20,7 @@ class Solution {
                 prevTime = currTime;
             }else{
                 output[currID] = output[currID] + currTime - prevTime + 1;
-                if(!stack.isEmpty()){
-                    stack.pop();
-                }
+                stack.pop();
                 prevTime = currTime + 1;
             }
         }
