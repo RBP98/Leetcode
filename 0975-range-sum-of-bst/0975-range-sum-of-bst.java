@@ -21,17 +21,18 @@ class Solution {
     }
 
     private void helper(TreeNode root, int low, int high){
-        if(root == null) return;
 
-        if(low <= root.val && root.val <= high){
-            sum = sum + root.val;
-        }
-        if(root.val > low){
-            helper(root.left, low, high);
-        }
+        if(root != null){
 
-        if(root.val < high){
-            helper(root.right, low, high);
-        }
+            if(low <= root.val && root.val <= high){
+                sum = sum + root.val;
+            }
+            if(root.val > low){
+                helper(root.left, low, high);
+            }
+            if(root.val < high){
+                helper(root.right, low, high);
+            }
+        } 
     }
 }
