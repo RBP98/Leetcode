@@ -16,24 +16,22 @@
 class Solution {
     int result = Integer.MIN_VALUE;
     int count = 0;
-
-    private void kthSmallestHelper(TreeNode root,int k){
-        if(root == null){
-            return ;
-        }
-
-        kthSmallestHelper(root.left,k);
-        
-        count++;
-        if(k == count){
-            result = root.val;
-        }
-
-        kthSmallestHelper(root.right, k);
-
-    }
     public int kthSmallest(TreeNode root, int k) {
-        kthSmallestHelper(root, k);
+        helper(root, k);
         return result;
+    }
+
+    private void helper(TreeNode root, int k) {
+        if(root == null) return;
+
+        helper(root.left, k);
+        count++;
+        if(k == count) 
+            result = root.val;
+
+        helper(root.right, k);
+
+
+
     }
 }
