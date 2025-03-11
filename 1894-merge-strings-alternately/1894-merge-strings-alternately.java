@@ -10,7 +10,7 @@ class Solution {
             m++;
             n++;
         }
-        String rem = word1.length() > word2.length() ? word1.substring(m) : word2.substring(n);
-    return sb.append(rem).toString();
+        // String rem = word1.length() > word2.length() ? word1.substring(m) : word2.substring(n);
+    return sb.append(word1.length() > word2.length() ? word1.substring(m) : word2.substring(n)).toString();
     }
 }
