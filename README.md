@@ -603,6 +603,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1537-maximum-score-after-splitting-a-string](https://github.com/RBP98/Leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/RBP98/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
+| [1894-merge-strings-alternately](https://github.com/RBP98/Leetcode/tree/master/1894-merge-strings-alternately) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/RBP98/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/RBP98/Leetcode/tree/master/2372-rearrange-characters-to-make-target-string) |
@@ -781,6 +782,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/RBP98/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0908-middle-of-the-linked-list](https://github.com/RBP98/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1028-interval-list-intersections](https://github.com/RBP98/Leetcode/tree/master/1028-interval-list-intersections) |
+| [1894-merge-strings-alternately](https://github.com/RBP98/Leetcode/tree/master/1894-merge-strings-alternately) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/RBP98/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Dynamic Programming
 |  |
