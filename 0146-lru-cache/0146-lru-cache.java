@@ -1,30 +1,30 @@
 class Node{
     int key;
-    int value;
+    int val;
     Node prev;
     Node next;
-    public Node(int key, int value){
+
+    public Node(int key, int val){
         this.key = key;
-        this.value = value;
+        this.val = val;
     }
 }
 
 class LRUCache {
-
-    Map<Integer, Node> map;
     Node head;
     Node tail;
     int capacity;
+    Map<Integer, Node> map;
     public LRUCache(int capacity) {
         map = new HashMap<>();
         this.capacity = capacity;
-        head = new Node(-1,-1);
-        tail = new Node(-1,-1);
+        head = new Node(-1, -1);
+        tail = new Node(-1, -1);
         head.next = tail;
         tail.prev = head;
     }
 
-    private void add(Node node){
+    public void add(Node node){
         if(node != null){
             Node temp = tail.prev;
             tail.prev = node;
@@ -32,24 +32,24 @@ class LRUCache {
             node.prev = temp;
             temp.next = node;
         }
-
-        
     }
 
-    private void remove(Node node){
+    public void remove(Node node){
         node.prev.next = node.next;
         node.next.prev = node.prev;
     }
-
+    
     public int get(int key) {
-        int res = -1;
+        int result = -1;
         if(map.containsKey(key)){
-            Node node = map.get(key);
-            res = node.value;
-            remove(node);
-            add(node);
+            Node temp = map.get(key);
+            result = temp.val;
+
+            remove(temp);
+            add(temp);
+
         }
-        return res;
+        return result;
     }
     
     public void put(int key, int value) {
@@ -57,18 +57,16 @@ class LRUCache {
             remove(map.get(key));
         }
 
-        Node node = new Node(key, value);
-        map.put(key, node);
+        Node temp = new Node(key, value);
+        add(temp);
+        map.put(key, temp);
 
-        add(node);
-      
-        if(capacity < map.size()){
-            int rem = head.next.key;
-            Node nodeToBeRemoved = map.get(rem);
-            map.remove(rem);
-            remove(nodeToBeRemoved);
-
+        if(map.size() > capacity){
+            int removal = head.next.key;
+            remove(head.next);
+            map.remove(removal);
         }
+
     }
 }
 
