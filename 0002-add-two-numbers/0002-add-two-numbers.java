@@ -22,12 +22,8 @@ class Solution {
             int y = ptr2 == null ? 0 : ptr2.val;
             
             int sum = x + y + carry;
-            if(sum > 9){
-                carry = 1;
-                sum = sum % 10;
-            }else{
-                carry = 0;
-            }
+            carry = sum / 10;
+            sum = sum % 10;
             ptr.next = new ListNode(sum); 
             ptr = ptr.next;
             
