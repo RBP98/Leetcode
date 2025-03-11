@@ -10,13 +10,15 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if (head  == null) return;
+        if(head == null) return;
         ListNode fast = head;
         ListNode slow = head;
-        while(fast != null  && fast.next != null){
+
+        while(fast != null && fast.next != null){
             fast = fast.next.next;
             slow = slow.next;
         }
+
         ListNode prev = null;
         ListNode curr = slow;
 
@@ -26,21 +28,16 @@ class Solution {
             prev = curr;
             curr = temp;
         }
-        
-        ListNode first = head;
-        ListNode second = prev;
-        while(second.next != null){
-            ListNode temp = first.next;
-            first.next = second;
-            first = temp;
 
-            temp = second.next;
-            second.next = first;
-            second = temp;
+        curr = head;
+        while(prev.next != null){
+            ListNode temp = curr.next;
+            curr.next = prev;
+            curr = temp;
+
+            temp = prev.next;
+            prev.next = curr;
+            prev = temp;
         }
-
-
-
-
     }
 }
