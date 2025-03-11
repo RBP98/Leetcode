@@ -15,11 +15,11 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
-        // Node dummy = new Node(0);
         if (head == null) {
             return null;
         }
         Node ptr = head;
+
         while(ptr != null){
             Node newNode = new Node(ptr.val);
             newNode.next = ptr.next;
@@ -33,18 +33,19 @@ class Solution {
             ptr.next.random = ptr.random != null ? ptr.random.next : null;
             ptr = ptr.next.next;
         }
+
         ptr = head;
-        Node newPtr = ptr.next;
-        Node newHead = newPtr;
+        Node ptr2 = head.next;
+        Node ans = ptr2;
 
         while(ptr != null){
-            ptr.next = ptr.next.next;
-            newPtr.next = newPtr.next != null ? newPtr.next.next: null;
+
+            ptr.next = ptr2.next;
+            ptr2.next = ptr.next == null ? null : ptr.next.next;
 
             ptr = ptr.next;
-            newPtr = newPtr.next;
+            ptr2 = ptr2.next;
         }
-
-        return newHead;
+        return ans;
     }
 }
