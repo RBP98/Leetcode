@@ -16,13 +16,11 @@ class Solution {
         }
 
         for(int i = freq.length - 1; i >= 0; i--){
-            while(freq[i] != 0){
-                k--;
-                freq[i]--;
-                if(k == 0){
-                    return i + minVal;
-                }
+            k = k - freq[i];
+            if(k <= 0){
+                return i + minVal;
             }
+            
         }
         return -1;
     }
