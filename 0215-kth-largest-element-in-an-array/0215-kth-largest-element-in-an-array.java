@@ -1,35 +1,29 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
+        int minVal = Integer.MAX_VALUE;
+        int maxVal = Integer.MIN_VALUE;
+
         for(int i: nums){
-            list.add(i);
-        }
-        return quickSelect(list, k);
-    }
-
-    private int quickSelect(List<Integer> numsList, int k){
-        Random random = new Random();
-        int pivot = numsList.get(random.nextInt(numsList.size()));
-
-        List<Integer> left = new ArrayList<>();
-        List<Integer> mid = new ArrayList<>();
-        List<Integer> right = new ArrayList<>();
-
-        for(int i = 0; i < numsList.size(); i++){
-            int num = numsList.get(i);
-            if(num > pivot) left.add(num);
-            else if(num < pivot) right.add(num);
-            else mid.add(num);
+            minVal = Math.min(i, minVal);
+            maxVal = Math.max(i, maxVal);
         }
 
-        if(left.size() >= k){
-            return quickSelect(left, k);
+        int[] freq = new int[maxVal - minVal + 1];
+
+        for(int i = 0; i < nums.length; i++){
+            int num = nums[i];
+            freq[num - minVal]++;
         }
 
-        if(left.size() + mid.size() < k){
-            return quickSelect(right, k - (left.size() + mid.size()));
+        for(int i = freq.length - 1; i >= 0; i--){
+            while(freq[i] != 0){
+                k--;
+                freq[i]--;
+                if(k == 0){
+                    return i + minVal;
+                }
+            }
         }
-
-        return pivot;
+        return -1;
     }
 }
