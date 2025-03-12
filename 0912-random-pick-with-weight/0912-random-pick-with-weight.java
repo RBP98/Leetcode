@@ -9,16 +9,18 @@ class Solution {
     }
     
     public int pickIndex() {
-        Random random = new Random();
+        // Random random = new Random();
         int total = prefix[prefix.length - 1];
-        int index = random.nextInt(total);
+        // int index = new Random().nextInt(total);
+
+        double index = total * Math.random();
 
         int low = 0;
         int high = prefix.length;
 
         while(low < high){
             int mid = low + (high-low)/2;
-            if(index < prefix[mid]){
+            if(index <= prefix[mid]){
                 high = mid;
             }else{
                 low = mid + 1;
