@@ -14,6 +14,11 @@ class Solution {
         for(int i = 0; i < str.length();i++){
             arr[str.charAt(i) - 'a']++;
         }
-        return new String(arr);
+
+        StringBuilder sb = new StringBuilder();
+        for (int freq : arr) {
+            sb.append(freq).append("#");
+        }
+        return sb.toString();
     } 
 }
