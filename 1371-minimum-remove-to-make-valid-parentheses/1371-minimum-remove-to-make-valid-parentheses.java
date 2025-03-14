@@ -7,10 +7,10 @@ class Solution {
             if(s.charAt(i) == '('){
                 stack.push(i);
             }else if(s.charAt(i) == ')'){
-                if(stack.isEmpty()){
-                    set.add(i);
-                }else{
+                if(!stack.isEmpty()){
                     stack.pop();
+                }else{
+                    set.add(i);
                 }
             }
         }
@@ -18,12 +18,15 @@ class Solution {
         for(int i: stack){
             set.add(i);
         }
+
         StringBuilder sb = new StringBuilder();
+
         for(int i = 0; i < s.length(); i++){
             if(!set.contains(i)){
-               sb.append(s.charAt(i)); 
+                sb.append(s.charAt(i));
             }
         }
+
         return sb.toString();
     }
 }
