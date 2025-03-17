@@ -4,6 +4,7 @@ class Solution {
         Map<String, List<String>> map = new HashMap<>();
         for(String str: strs){
             String stringHash = createHash(str);
+            System.out.println(stringHash);
             map.computeIfAbsent(stringHash, e -> new ArrayList<>()).add(str);
         }
         return new ArrayList<>(map.values());
@@ -14,6 +15,10 @@ class Solution {
         for(int i = 0; i < str.length();i++){
             arr[str.charAt(i) - 'a']++;
         }
+
+        // for(char i: arr){
+        //     System.out.print((i) + " ");
+        // }
         return String.valueOf(arr);
     } 
 }
