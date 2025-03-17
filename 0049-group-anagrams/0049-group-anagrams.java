@@ -4,7 +4,6 @@ class Solution {
         Map<String, List<String>> map = new HashMap<>();
         for(String str: strs){
             String stringHash = createHash(str);
-            System.out.println(stringHash);
             map.computeIfAbsent(stringHash, e -> new ArrayList<>()).add(str);
         }
         return new ArrayList<>(map.values());
