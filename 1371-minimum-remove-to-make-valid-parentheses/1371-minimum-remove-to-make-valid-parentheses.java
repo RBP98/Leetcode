@@ -7,10 +7,10 @@ class Solution {
             if(s.charAt(i) == '('){
                 stack.push(i);
             }else if(s.charAt(i) == ')'){
-                if(!stack.isEmpty()){
-                    stack.pop();
-                }else{
+                if(stack.isEmpty()){
                     set.add(i);
+                }else{
+                    stack.pop();
                 }
             }
         }
