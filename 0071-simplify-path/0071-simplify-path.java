@@ -6,21 +6,19 @@ class Solution {
                 continue;
             }
 
-            if(!stack.isEmpty() && s.equals("..")){
-                stack.pop();
-            }else{
-                if(!s.equals("..")){
-                    stack.push(s);
+            if(s.equals("..")){
+                if(!stack.isEmpty()){
+                    stack.pop();
                 }
+            }else{
+                stack.push(s);
             }
-
         }
-
+    
         StringBuilder sb = new StringBuilder();
 
-        for(String s : stack){
-            sb.append("/");
-            sb.append(s);
+        for(String s: stack){
+            sb.append("/").append(s);
         }
 
         return stack.isEmpty() ? "/" : sb.toString();
