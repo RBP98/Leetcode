@@ -1,27 +1,36 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        int minVal = Integer.MAX_VALUE;
-        int maxVal = Integer.MIN_VALUE;
+        // minValue
+        // maxValue
+
+        int minValue = Integer.MAX_VALUE;
+        int maxValue = Integer.MIN_VALUE;
+        
+        for(int i: nums){
+            minValue = Math.min(minValue, i);
+            maxValue = Math.max(maxValue, i);
+        }
+
+        int[] freqArr = new int[maxValue - minValue + 1];
 
         for(int i: nums){
-            minVal = Math.min(i, minVal);
-            maxVal = Math.max(i, maxVal);
+            freqArr[i - minValue]++;
         }
 
-        int[] freq = new int[maxVal - minVal + 1];
+        for(int i = freqArr.length - 1; i >= 0; i--){
+            if(freqArr[i] > 0){
+                k = k - freqArr[i];
 
-        for(int i = 0; i < nums.length; i++){
-            int num = nums[i];
-            freq[num - minVal]++;
-        }
-
-        for(int i = freq.length - 1; i >= 0; i--){
-            k = k - freq[i];
-            if(k <= 0){
-                return i + minVal;
+                if(k <= 0){
+                    return i + minValue;
+                }
             }
-            
+
+
         }
+
         return -1;
+
+        // maxValue - minValue + 1
     }
 }
