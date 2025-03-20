@@ -12,7 +12,7 @@ class Solution {
                 current[1] = Math.max(current[1], interval[1]);
             }else{
                 current = interval;
-                merged.add(current);
+                merged.add(interval);
             }
         }
 
