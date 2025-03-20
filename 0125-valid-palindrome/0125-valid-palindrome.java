@@ -6,7 +6,6 @@ class Solution {
                 sb.append(Character.toLowerCase(c));
             }
         }
-        
         String sani = sb.toString();
         
         int left = 0;
