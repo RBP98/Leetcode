@@ -15,9 +15,8 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
-        if (head == null) {
-            return null;
-        }
+        if(head == null) return null;
+
         Node ptr = head;
 
         while(ptr != null){
@@ -30,22 +29,23 @@ class Solution {
         ptr = head;
 
         while(ptr != null){
-            ptr.next.random = ptr.random != null ? ptr.random.next : null;
+            ptr.next.random = ptr.random == null ? null: ptr.random.next;
             ptr = ptr.next.next;
         }
 
-        ptr = head;
-        Node ptr2 = head.next;
-        Node ans = ptr2;
+        ptr = head; 
+        Node ptr1 = head.next;
+        Node ans = ptr1;
 
         while(ptr != null){
-
-            ptr.next = ptr2.next;
-            ptr2.next = ptr.next == null ? null : ptr.next.next;
+            ptr.next = ptr1.next;
+            ptr1.next = ptr.next == null ? null: ptr.next.next;
 
             ptr = ptr.next;
-            ptr2 = ptr2.next;
+            ptr1 = ptr1.next;
         }
+
+
         return ans;
     }
 }
