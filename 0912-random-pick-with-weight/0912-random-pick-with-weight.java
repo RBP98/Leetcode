@@ -1,5 +1,5 @@
 class Solution {
-    int prefix[];
+    int[] prefix;
     public Solution(int[] w) {
         prefix = new int[w.length];
         prefix[0] = w[0];
@@ -9,24 +9,22 @@ class Solution {
     }
     
     public int pickIndex() {
-        // Random random = new Random();
-        int total = prefix[prefix.length - 1];
-        int index = new Random().nextInt(total + 1);
+        Random rand = new Random();
+        int sum = prefix[prefix.length - 1];
+        int target = rand.nextInt(sum);
 
-        // double index = total * Math.random();
+        int left = 0;
+        int right = prefix.length - 1;
 
-        int low = 0;
-        int high = prefix.length;
-
-        while(low < high){
-            int mid = low + (high-low)/2;
-            if(index <= prefix[mid]){
-                high = mid;
+        while(left < right){
+            int mid = left + (right - left)/2;
+            if(target < prefix[mid]){
+                right = mid;
             }else{
-                low = mid + 1;
+                left = mid + 1;
             }
         }
-        return low;
+        return left;
     }
 }
 
