@@ -10,8 +10,9 @@ class Solution {
             int count = freqArr[order.charAt(i) - 'a'];
             for(int j = 0; j < count; j++){
                 sb.append(order.charAt(i));
+                      freqArr[order.charAt(i) - 'a']--;
+      
             }
-            freqArr[order.charAt(i) - 'a']--;
         }
 
         for(int i = 0; i < freqArr.length; i++){
