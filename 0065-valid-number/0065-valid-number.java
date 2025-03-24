@@ -9,7 +9,7 @@ class Solution {
             if(Character.isDigit(c)){
                 seenDigit = true;
             }else if(c == '+' || c == '-'){
-                if(i > 0 && !(s.charAt(i - 1) == 'e' || s.charAt(i - 1) == 'E'))
+                if(i != 0 && !(s.charAt(i - 1) == 'e' || s.charAt(i - 1) == 'E'))
                     return false;
             }else if(c == 'e' || c == 'E'){
                 if(seenExponent || !seenDigit){
