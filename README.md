@@ -574,6 +574,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0038-count-and-say](https://github.com/RBP98/Leetcode/tree/master/0038-count-and-say) |
 | [0043-multiply-strings](https://github.com/RBP98/Leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/RBP98/Leetcode/tree/master/0049-group-anagrams) |
+| [0065-valid-number](https://github.com/RBP98/Leetcode/tree/master/0065-valid-number) |
 | [0071-simplify-path](https://github.com/RBP98/Leetcode/tree/master/0071-simplify-path) |
 | [0091-decode-ways](https://github.com/RBP98/Leetcode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/RBP98/Leetcode/tree/master/0125-valid-palindrome) |
