@@ -273,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RBP98/Leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0414-third-maximum-number](https://github.com/RBP98/Leetcode/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0498-diagonal-traverse](https://github.com/RBP98/Leetcode/tree/master/0498-diagonal-traverse) |
 | [0523-continuous-subarray-sum](https://github.com/RBP98/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0636-exclusive-time-of-functions](https://github.com/RBP98/Leetcode/tree/master/0636-exclusive-time-of-functions) |
@@ -492,6 +493,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0054-spiral-matrix](https://github.com/RBP98/Leetcode/tree/master/0054-spiral-matrix) |
 | [0059-spiral-matrix-ii](https://github.com/RBP98/Leetcode/tree/master/0059-spiral-matrix-ii) |
 | [0415-add-strings](https://github.com/RBP98/Leetcode/tree/master/0415-add-strings) |
+| [0498-diagonal-traverse](https://github.com/RBP98/Leetcode/tree/master/0498-diagonal-traverse) |
 | [0874-backspace-string-compare](https://github.com/RBP98/Leetcode/tree/master/0874-backspace-string-compare) |
 | [1119-robot-bounded-in-circle](https://github.com/RBP98/Leetcode/tree/master/1119-robot-bounded-in-circle) |
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
@@ -710,6 +712,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0085-maximal-rectangle](https://github.com/RBP98/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0200-number-of-islands](https://github.com/RBP98/Leetcode/tree/master/0200-number-of-islands) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RBP98/Leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0498-diagonal-traverse](https://github.com/RBP98/Leetcode/tree/master/0498-diagonal-traverse) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
 | [0777-toeplitz-matrix](https://github.com/RBP98/Leetcode/tree/master/0777-toeplitz-matrix) |
 | [0854-making-a-large-island](https://github.com/RBP98/Leetcode/tree/master/0854-making-a-large-island) |
