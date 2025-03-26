@@ -4,22 +4,21 @@ class Solution {
 
         int left = 0;
         int right = 0;
-        int max = 0;
+        int maxLength = Integer.MIN_VALUE;
         while(right < s.length()){
             if(!set.contains(s.charAt(right))){
                 set.add(s.charAt(right));
-                max = Math.max(max, set.size());
+                maxLength = Math.max(maxLength, set.size());
                 right++;
-          
-            }else{
+            }else if(set.contains(s.charAt(right))){
                 while(set.contains(s.charAt(right))){
                     set.remove(s.charAt(left));
                     left++;
                 }
+                maxLength = Math.max(maxLength, set.size());
+             
             }
-
-
         }
-        return max;
+        return maxLength;
     }
 }
