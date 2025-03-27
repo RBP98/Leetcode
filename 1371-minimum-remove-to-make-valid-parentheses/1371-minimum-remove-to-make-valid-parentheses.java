@@ -1,32 +1,33 @@
 class Solution {
+
     public String minRemoveToMakeValid(String s) {
-        Stack<Integer> stack = new Stack<>();
-        Set<Integer> set = new HashSet<>();
-
-        for(int i = 0; i < s.length(); i++){
-            if(s.charAt(i) == '('){
-                stack.push(i);
-            }else if(s.charAt(i) == ')'){
-                if(stack.isEmpty()){
-                    set.add(i);
-                }else{
-                    stack.pop();
-                }
-            }
-        }
-
-        for(int i: stack){
-            set.add(i);
-        }
 
         StringBuilder sb = new StringBuilder();
-
-        for(int i = 0; i < s.length(); i++){
-            if(!set.contains(i)){
-                sb.append(s.charAt(i));
+        int openSeen = 0;
+        int balance = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                openSeen++;
+                balance++;
+            } if (c == ')') {
+                if (balance == 0) continue;
+                balance--;
             }
+            sb.append(c);
         }
 
-        return sb.toString();
+        StringBuilder result = new StringBuilder();
+        int openToKeep = openSeen - balance;
+        for (int i = 0; i < sb.length(); i++) {
+            char c = sb.charAt(i);
+            if (c == '(') {
+                openToKeep--;
+                if (openToKeep < 0) continue;
+            }
+            result.append(c);
+        }
+
+        return result.toString();
     }
 }
