@@ -307,6 +307,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/RBP98/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/RBP98/Leetcode/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/RBP98/Leetcode/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/RBP98/Leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
