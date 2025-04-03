@@ -17,8 +17,12 @@ class Solution(object):
         #     if val != 0:
         #         return False
         # return True
-
-        return Counter(s) == Counter(t)
+        for char in set(s):
+            if s.count(char) != t.count(char):
+                return False
+            
+        return True
+        # return Counter(s) == Counter(t)
 
         
         
