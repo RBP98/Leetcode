@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: bool
         """
         seen = set()
-        for num in nums:
-            if num in seen:
+        for i in range(len(nums)):
+            if nums[i] in seen:
                 return True
-            seen.add(num)
+            seen.add(nums[i])
         return False
         
         
