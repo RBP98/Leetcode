@@ -5,7 +5,8 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-
+        if len(s) != len(t):
+            return False
         # freqDict = {}
         # for letter in s:
         #     freqDict[letter] = freqDict.get(letter, 0) + 1
