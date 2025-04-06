@@ -4,10 +4,10 @@ class Solution {
         int ans = 1;
 
         for(int i = n; i >= 0; i--){
-            int maxK = (int)Math.pow(2, i - 1);
-            if(k > (maxK)/2){
+            int half = (int)Math.pow(2, i - 2);
+            if(k > half){
                 ans = 1 - ans;
-                k = k - (maxK)/2;
+                k = k - half;
             }
         }
         if(ans != 0) return 0;
