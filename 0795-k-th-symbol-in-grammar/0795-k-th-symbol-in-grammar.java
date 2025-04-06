@@ -1,17 +1,13 @@
 class Solution {
     public int kthGrammar(int n, int k) {
         if(n == 1) return 0;
-        int ans = 1;
 
-        for(int i = n; i >= 0; i--){
-            int half = (int)Math.pow(2, i - 2);
-            if(k > half){
-                ans = 1 - ans;
-                k = k - half;
-            }
+        int half = (int)Math.pow(2, n - 2);
+
+        if(k > half){
+            return 1 - kthGrammar(n, k - half);
+        }else{
+            return kthGrammar(n - 1, k);
         }
-        if(ans != 0) return 0;
-
-        return 1;
     }
 }
