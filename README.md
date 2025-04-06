@@ -266,6 +266,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/RBP98/Leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/RBP98/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/RBP98/Leetcode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/RBP98/Leetcode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
@@ -323,6 +324,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/RBP98/Leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0162-find-peak-element](https://github.com/RBP98/Leetcode/tree/master/0162-find-peak-element) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/RBP98/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/RBP98/Leetcode/tree/master/0278-first-bad-version) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RBP98/Leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -475,6 +477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
 | [0263-ugly-number](https://github.com/RBP98/Leetcode/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/RBP98/Leetcode/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/RBP98/Leetcode/tree/master/0326-power-of-three) |
 | [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
@@ -554,6 +557,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0219-contains-duplicate-ii](https://github.com/RBP98/Leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
 | [0264-ugly-number-ii](https://github.com/RBP98/Leetcode/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0387-first-unique-character-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0398-random-pick-index](https://github.com/RBP98/Leetcode/tree/master/0398-random-pick-index) |
@@ -638,6 +642,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0215-kth-largest-element-in-an-array](https://github.com/RBP98/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/RBP98/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/RBP98/Leetcode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/RBP98/Leetcode/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RBP98/Leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -687,6 +692,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0137-single-number-ii](https://github.com/RBP98/Leetcode/tree/master/0137-single-number-ii) |
 | [0191-number-of-1-bits](https://github.com/RBP98/Leetcode/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/RBP98/Leetcode/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/RBP98/Leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0371-sum-of-two-integers](https://github.com/RBP98/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0795-k-th-symbol-in-grammar](https://github.com/RBP98/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
