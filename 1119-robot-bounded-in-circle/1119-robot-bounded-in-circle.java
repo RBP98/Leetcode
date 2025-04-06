@@ -7,20 +7,23 @@ class Solution {
 
         int index = 0;
 
-        for(int i = 0; i < instructions.length(); i++){
-            char c = instructions.charAt(i);
+        for(int j = 0; j < 4; j++){
+            for(int i = 0; i < instructions.length(); i++){
+                char c = instructions.charAt(i);
 
-            if(c == 'R'){
-                index = (index + 1) % 4;
-            }else if(c == 'L'){
-                index = (index + 3) % 4;
-            }else{
-                x = x + directions[index][0];
-                y = y + directions[index][1];
+                if(c == 'R'){
+                    index = (index + 1) % 4;
+                }else if(c == 'L'){
+                    index = (index + 3) % 4;
+                }else{
+                    x = x + directions[index][0];
+                    y = y + directions[index][1];
+                }
             }
         }
+        
 
 
-        return (x == 0 && y == 0) || index != 0;
+        return (x == 0 && y == 0);
     }
 }
