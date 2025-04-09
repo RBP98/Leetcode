@@ -315,6 +315,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3206-find-common-elements-between-two-arrays](https://github.com/RBP98/Leetcode/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/RBP98/Leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/RBP98/Leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 ## Binary Search
 |  |
 | ------- |
@@ -586,6 +587,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/RBP98/Leetcode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/RBP98/Leetcode/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/RBP98/Leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/RBP98/Leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 ## String
 |  |
 | ------- |
