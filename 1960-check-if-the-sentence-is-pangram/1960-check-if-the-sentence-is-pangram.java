@@ -6,7 +6,7 @@ class Solution {
             if(arr[(sentence.charAt(i) - 'a')] == 0) count--;
             arr[sentence.charAt(i) - 'a']++;
             
-            // if(count == 0) return true;
+            if(count == 0) return true;
         }
         return count == 0;
     }
