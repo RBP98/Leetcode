@@ -9,12 +9,12 @@ class Solution {
                     return false;
                 }else{
                     if(stack.peek() == '(' && s.charAt(i) == ')' ||
-                        stack.peek() == '[' && s.charAt(i) == ']' ||
-                        stack.peek() == '{' && s.charAt(i) == '}' ){
-                            stack.pop();
-                        }else{
-                            return false;
-                        }
+                    stack.peek() == '[' && s.charAt(i) == ']' ||
+                    stack.peek() == '{' && s.charAt(i) == '}' ){
+                        stack.pop();
+                    }else{
+                        return false;
+                    }
                 }
             }
         }
