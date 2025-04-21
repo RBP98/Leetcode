@@ -26,13 +26,13 @@ class Solution {
                     left++;
                     right--;
                 }else if(nums[left] + nums[right] + nums[i] > 0){
-                    while(left < right && nums[left] + nums[right] + nums[i] > 0){
+                    // while(left < right && nums[left] + nums[right] + nums[i] > 0){
                         right--;
-                    }
+                    // }
                 }else{
-                    while(left < right && nums[left] + nums[right] + nums[i] < 0){
+                    // while(left < right && nums[left] + nums[right] + nums[i] < 0){
                         left++;
-                    }
+                    // }
                 }
             }
         }
