@@ -577,6 +577,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0523-continuous-subarray-sum](https://github.com/RBP98/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/RBP98/Leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0567-permutation-in-string](https://github.com/RBP98/Leetcode/tree/master/0567-permutation-in-string) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/RBP98/Leetcode/tree/master/0753-open-the-lock) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
@@ -620,6 +621,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/RBP98/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0443-string-compression](https://github.com/RBP98/Leetcode/tree/master/0443-string-compression) |
+| [0567-permutation-in-string](https://github.com/RBP98/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/RBP98/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/RBP98/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
@@ -800,6 +802,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0219-contains-duplicate-ii](https://github.com/RBP98/Leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/RBP98/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0567-permutation-in-string](https://github.com/RBP98/Leetcode/tree/master/0567-permutation-in-string) |
 | [1046-max-consecutive-ones-iii](https://github.com/RBP98/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1755-defuse-the-bomb](https://github.com/RBP98/Leetcode/tree/master/1755-defuse-the-bomb) |
 ## Two Pointers
@@ -822,6 +825,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0287-find-the-duplicate-number](https://github.com/RBP98/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0392-is-subsequence](https://github.com/RBP98/Leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/RBP98/Leetcode/tree/master/0443-string-compression) |
+| [0567-permutation-in-string](https://github.com/RBP98/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/RBP98/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/RBP98/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0874-backspace-string-compare](https://github.com/RBP98/Leetcode/tree/master/0874-backspace-string-compare) |
