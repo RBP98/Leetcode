@@ -323,6 +323,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/RBP98/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/RBP98/Leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/RBP98/Leetcode/tree/master/0035-search-insert-position) |
+| [0069-sqrtx](https://github.com/RBP98/Leetcode/tree/master/0069-sqrtx) |
 | [0074-search-a-2d-matrix](https://github.com/RBP98/Leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RBP98/Leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RBP98/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -480,6 +481,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0050-powx-n](https://github.com/RBP98/Leetcode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/RBP98/Leetcode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/RBP98/Leetcode/tree/master/0066-plus-one) |
+| [0069-sqrtx](https://github.com/RBP98/Leetcode/tree/master/0069-sqrtx) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/RBP98/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0166-fraction-to-recurring-decimal](https://github.com/RBP98/Leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0171-excel-sheet-column-number](https://github.com/RBP98/Leetcode/tree/master/0171-excel-sheet-column-number) |
