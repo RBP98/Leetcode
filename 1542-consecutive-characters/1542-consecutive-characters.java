@@ -1,19 +1,16 @@
 class Solution {
     public int maxPower(String s) {
-        char lastChar = s.charAt(0);
-        int power = 1;
-        int currLength = 1;
-        for(int i = 1; i < s.length(); i++){
-            if(s.charAt(i) == lastChar){
-                currLength++;
+        int left = 0;
+        int right = 0;
+        int longest = 0;
+        while(right < s.length()){
+            if(s.charAt(left) == s.charAt(right)){
+                right++;
+                longest = Math.max(longest, right - left);
                 continue;
             }
-            power = Math.max(power, currLength);
-            currLength = 1;
-            lastChar = s.charAt(i);
+            left = right;
         }
-
-        power = Math.max(power, currLength);
-        return power;
+        return longest;
     }
 }
