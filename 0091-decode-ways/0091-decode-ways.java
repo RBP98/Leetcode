@@ -1,25 +1,29 @@
 class Solution {
-    Map<Integer, Integer> map = new HashMap<>();
     public int numDecodings(String s) {
-        return helper(0, s);
+        int[] dp = new int[s.length()];
+        Arrays.fill(dp, -1);
+        return helper(s, 0, dp);
+      
     }
 
-    private int helper(int index, String s){
-        if(map.containsKey(index)) return map.get(index);
-
+    private int helper(String s, int index, int[] dp){
         if(index == s.length()) return 1;
-
         if(s.charAt(index) == '0') return 0;
-        
-        if(index == s.length() - 1) return 1;
 
-        int ans = helper(index + 1, s);
+        if(dp[index] != -1) return dp[index];
 
-        if(Integer.parseInt(s.substring(index, index + 2)) <= 26){
-            ans = ans + helper(index + 2, s);
+        int ways = helper(s, index + 1, dp);
+
+        if(index + 1 < s.length()){
+
+            int twoDigits = Integer.parseInt(s.substring(index, index + 2));
+
+            if(10 <= twoDigits && twoDigits <= 26)
+                ways = ways + helper(s, index + 2, dp);
         }
-        map.put(index, ans);
 
-        return ans;
+        dp[index] = ways;
+
+        return ways;
     }
 }
