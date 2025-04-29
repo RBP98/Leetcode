@@ -2,30 +2,23 @@ class Solution {
     public int compress(char[] chars) {
         int i = 0;
         int index = 0;
-        while(i < chars.length){
-            int count = 0;
-            char currentChar = chars[i];
 
-            while(i < chars.length && chars[i] == currentChar){
+        while(i < chars.length){
+            char curr = chars[i];
+            int count = 0;
+            while(i < chars.length && curr == chars[i]){
                 count++;
                 i++;
             }
-
-            chars[index] = currentChar;
+            chars[index] = curr;
             index++;
 
             if(count > 1){
-                String s = Integer.toString(count);
-                for(int c = 0; c < s.length(); c++){
-                    chars[index] = s.charAt(c);
+                String s = String.valueOf(count);
+                for(int j = 0; j < s.length(); j++){
+                    chars[index] = s.charAt(j);
                     index++;
                 }
-                
-                // while(count != 0){
-                //     chars[index] = (char)(count%10 + '0');
-                //     index++;
-                //     count = count/10;
-                // }
             }
         }
         return index;
