@@ -1,41 +1,26 @@
 class Solution {
+    
+    // {1: 3, 2: 5, 3: 2, 6: 4}
+
+
+    // [3, ]
+
+
+
+
     public int[] topKFrequent(int[] nums, int k) {
-        int minVal = Integer.MAX_VALUE;
-        int maxVal = Integer.MIN_VALUE;
+        Map<Integer, Integer> map = new HashMap<>();
+
         for(int i: nums){
-            minVal = Math.min(i, minVal);
-            maxVal = Math.max(i, maxVal);
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
-
-        int[] freqArr = new int[maxVal - minVal + 1];
-        int maxFreq = 0;
-        for(int i: nums){
-            freqArr[i - minVal]++;
-            maxFreq = Math.max(maxFreq, freqArr[i - minVal]);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> map.get(b) - map.get(a));
+        for(int i : map.keySet()){
+            pq.add(i);
         }
-        List<Integer>[] arr = new ArrayList[maxFreq + 1];
-
-        for(int i = 0; i < freqArr.length; i++){
-            int freq = freqArr[i];
-
-            if(freq > 0){
-                if(arr[freq] == null){
-                    arr[freq] = new ArrayList<>();
-                }
-                arr[freq].add(i + minVal);
-            }
-        }
-        int[] res = new int[k];
-        int index = 0;
-        for(int i = maxFreq; i >= 0 && index < k; i--) {
-            if (arr[i] != null) {
-                for (int num : arr[i]) {
-                    res[index++] = num;
-                    if (index == k) {
-                        break;
-                    }
-                }
-            }
+        int res[] = new int[k];
+        for(int i = 0; i < k; i++){
+            res[i] = pq.poll();
         }
 
         return res;
