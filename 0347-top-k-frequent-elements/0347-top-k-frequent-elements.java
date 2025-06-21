@@ -6,8 +6,8 @@ class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         
         Map<Integer, Integer> map = new HashMap<>();
-        int minFreq = Integer.MAX_VALUE;
-        int maxFreq = Integer.MIN_VALUE;
+        // int minFreq = Integer.MAX_VALUE;
+        // int maxFreq = Integer.MIN_VALUE;
         
         // for(int i : nums){
         //     minNum  = Math.min(minNum, i);
@@ -16,21 +16,19 @@ class Solution {
         
         for(int i: nums){
             map.put(i, map.getOrDefault(i, 0) + 1);
-            minFreq = Math.min(minFreq, map.get(i));
-            maxFreq = Math.max(maxFreq, map.get(i));
         }
 
-        ArrayList<Integer>[] arr = new ArrayList[maxFreq - minFreq + 1];
+        List<Integer>[] arr = new ArrayList[nums.length + 1];
 
         for(Map.Entry<Integer, Integer> entry : map.entrySet()){
             int key = entry.getKey();
             int value = entry.getValue();
 
-            if(arr[value - minFreq] == null){
-                arr[value - minFreq] = new ArrayList<>();
+            if(arr[value] == null){
+                arr[value] = new ArrayList<>();
             }
 
-            arr[value - minFreq].add(key);
+            arr[value].add(key);
 
         }
         int count = 0;
