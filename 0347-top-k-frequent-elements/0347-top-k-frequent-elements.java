@@ -35,15 +35,15 @@ class Solution {
         }
         int count = 0;
         int res[] = new int[k];
-        for(int i = arr.length - 1; i >= 0; i--){
+        for(int i = arr.length - 1; i >= 0 && count < k; i--){
             if(arr[i] != null){
                 for(int num: arr[i]){
+                    
+                    res[count] = num;
+                    count++;
                     if(count == k){
                         break;
                     }
-                    res[count] = num;
-                    count++;
-
                     
                 }
             }
