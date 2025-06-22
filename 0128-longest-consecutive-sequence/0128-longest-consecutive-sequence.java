@@ -5,16 +5,16 @@ class Solution {
         for(int i : nums){
             set.add(i);
         }
-        int longest = 1;
+        int longest = 0;
         for(int i: set){
-            int seq = 1;
+            int seq = 0;
             if(!set.contains(i - 1)){
-                while(set.contains(i + 1)){
+                while(set.contains(i++)){
                     seq++;
-                    longest = Math.max(seq, longest);
-                    i++;
+                    
                 }
             }
+            longest = Math.max(seq, longest);
         }
         return longest;
     }
