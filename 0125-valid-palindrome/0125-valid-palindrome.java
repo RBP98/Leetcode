@@ -1,28 +1,25 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        // Create sanitized string
-        StringBuilder sb = new StringBuilder();
+        StringBuilder str = new StringBuilder();
 
-        for(char c: s.toCharArray()){
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
             if(Character.isLetterOrDigit(c)){
-                sb.append(Character.toLowerCase(c));
+                str.append(Character.toLowerCase(c));
             }
-        }
-        String sanitized = sb.toString();
-        //Init two pointers
-        int left = 0;
-        int right = sanitized.length() - 1;
-        //Run a loop until left ptr < right ptr
-        while(left < right){
+        } 
 
-        
-        //if char At left == char At right then incr left and decr right
-            if(sanitized.charAt(left) != sanitized.charAt(right)){
-                return false;        
-            }
+        String cleaned = str.toString();
+
+        int left = 0;
+        int right = cleaned.length() - 1;
+
+        while(left < right){
+            if(cleaned.charAt(left) != cleaned.charAt(right)) return false;
             left++;
             right--;
         }
+
         return true;
     }
 }
