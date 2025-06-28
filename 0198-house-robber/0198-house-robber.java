@@ -1,13 +1,12 @@
 class Solution {
     public int rob(int[] nums) {
-        int robNext = nums[nums.length - 1];
-        int robNextPlusOne = 0;
+        
+        return helper(nums, nums.length - 1);
+    }
 
-        for(int i = nums.length - 2; i >= 0; i--){
-            int current = Math.max(robNext, robNextPlusOne + nums[i]);
-            robNextPlusOne = robNext;
-            robNext = current;
-        }
-        return robNext;
+    private int helper(int[] nums, int n){
+        if(n < 0) return 0;
+        return Math.max(helper(nums, n - 2) + nums[n], helper(nums, n - 1));
+        
     }
 }
