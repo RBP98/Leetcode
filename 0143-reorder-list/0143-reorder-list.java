@@ -38,15 +38,16 @@ class Solution {
         ListNode reversed = reverseList(slow);
 
         while(reversed.next != null){
-            ListNode temp  = dummy.next;
+
+            ListNode temp = dummy.next;
             dummy.next = reversed;
             dummy = temp;
 
             temp = reversed.next;
             reversed.next = dummy;
             reversed = temp;
-
         }
+
 
 
     }
