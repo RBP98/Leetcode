@@ -3,18 +3,21 @@ class Solution {
         int x = Math.abs(a);
         int y = Math.abs(b);
 
-        int answer = 0;
         int sign = a > 0 ? 1 : -1;
 
         if(x < y) return getSum(b, a);
 
+        int answer = 0;
+
         if(a*b >= 0){
+
             while(y != 0){
                 answer = x ^ y;
                 int carry = (x & y) << 1;
                 x = answer;
                 y = carry;
             }
+            
         }else{
             while(y != 0){
                 answer = x ^ y;
@@ -22,9 +25,7 @@ class Solution {
                 x = answer;
                 y = borrow;
             }
-
         }
-
         return x * sign;
     }
 }
