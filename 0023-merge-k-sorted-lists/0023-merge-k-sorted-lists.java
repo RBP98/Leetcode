@@ -14,15 +14,14 @@ class Solution {
         int k = lists.length;
         while(k > 1){
             for(int i = 0; i < k/2; i++){
-                lists[i] = merge2Lists(lists[i], lists[i + (k+1)/2] );
+                lists[i] = mergeTwoLists(lists[i], lists[i + (k + 1)/2]);
             }
-            k = (k + 1)/2;        
-
+            k = (k + 1)/2;
         }
         return lists[0];
     }
 
-    private ListNode merge2Lists(ListNode l1, ListNode l2){
+    private ListNode mergeTwoLists(ListNode l1, ListNode l2){
         ListNode dummy = new ListNode();
         ListNode temp = dummy;
         ListNode ptr1 = l1;
@@ -50,4 +49,5 @@ class Solution {
 
         return dummy.next;
     }
+
 }
