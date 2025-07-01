@@ -1,11 +1,11 @@
 class Solution {
     public double myPow(double x, int n) {
-        // int sign = 1;
+        long N = n;
         if(n < 0){
-            return helper((1/x) , -n);
+            return helper((1/x) , -N);
         }
 
-        return helper(x, n);
+        return helper(x, N);
     }
 
     private double helper(double x, long n){
