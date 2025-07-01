@@ -1,46 +1,46 @@
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        List<List<Integer>> adj = new ArrayList<>();
-        int n = numCourses;
-
+        List<List<Integer>> list = new ArrayList<>();
         for(int i = 0; i < numCourses; i++){
-            adj.add(new ArrayList<>());
+            list.add(new ArrayList<>());
         }
 
-        for(int i = 0; i < prerequisites.length; i++){
-            adj.get(prerequisites[i][0]).add(prerequisites[i][1]);
+        for(int[] i : prerequisites){
+            list.get(i[1]).add(i[0]);
         }
 
         int[] indegree = new int[numCourses];
 
-        for(List<Integer> i: adj){
+        for(List<Integer> i: list){
             for(int j: i){
                 indegree[j]++;
             }
         }
         Queue<Integer> queue = new LinkedList<>();
-        for(int i = 0; i < indegree.length; i++){
+        for(int i = 0; i < numCourses; i++){
             if(indegree[i] == 0){
                 queue.add(i);
             }
         }
-        int[] arr = new int[numCourses];
         int count = 0;
+        List<Integer> res = new ArrayList<>();
         while(!queue.isEmpty()){
-            int temp = queue.poll();
-            arr[numCourses - count - 1] = temp;
-            n--;
-            for(int i: adj.get(temp)){
+            int val = queue.poll();
+            res.add(val);
+            numCourses--;
+            for(int i : list.get(val)){
                 indegree[i]--;
                 if(indegree[i] == 0){
                     queue.add(i);
                 }
             }
-            count++; 
+
+
         }
 
 
+        
 
-    return n == 0 ? arr: new int[]{};
+        return numCourses != 0 ? new int[]{} : res.stream().mapToInt(Integer::intValue).toArray();
     }
 }
