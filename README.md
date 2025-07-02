@@ -286,6 +286,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
 | [0739-daily-temperatures](https://github.com/RBP98/Leetcode/tree/master/0739-daily-temperatures) |
+| [0747-min-cost-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/RBP98/Leetcode/tree/master/0753-open-the-lock) |
 | [0777-toeplitz-matrix](https://github.com/RBP98/Leetcode/tree/master/0777-toeplitz-matrix) |
 | [0792-binary-search](https://github.com/RBP98/Leetcode/tree/master/0792-binary-search) |
@@ -884,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0392-is-subsequence](https://github.com/RBP98/Leetcode/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/RBP98/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0647-palindromic-substrings](https://github.com/RBP98/Leetcode/tree/master/0647-palindromic-substrings) |
+| [0747-min-cost-climbing-stairs](https://github.com/RBP98/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/RBP98/Leetcode/tree/master/1013-fibonacci-number) |
 | [1250-longest-common-subsequence](https://github.com/RBP98/Leetcode/tree/master/1250-longest-common-subsequence) |
 ## Database
