@@ -1,22 +1,15 @@
 class Solution {
     public int reverse(int x) {
-        boolean neg = false;
-        int absx = Math.abs(x);
-        if(x < 0){
-            neg = true;
+        int rev = 0;
+        while(x != 0){
+            int pop = x % 10;
+            x = x/10;
+
+            if((rev > Integer.MAX_VALUE/10) || ((rev == Integer.MAX_VALUE/10) && pop == Integer.MAX_VALUE % 10)) return 0;
+            if((rev < Integer.MIN_VALUE/10) || ((rev == Integer.MIN_VALUE/10) && pop == Integer.MIN_VALUE % 10)) return 0;
+            rev = rev * 10  + pop;
         }
-        long y = 0;
-        while(absx != 0){
-            y = y * 10 + absx % 10;
-            absx = absx/10;
-        }
-        if(neg == true){
-            y = y * -1;
-        }
-        if(y > Integer.MAX_VALUE || y < Integer.MIN_VALUE){
-            y = 0;
-        }
-        return (int)y;
-        
+
+        return rev;
     }
 }
