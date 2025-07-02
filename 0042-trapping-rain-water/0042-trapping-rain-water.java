@@ -3,22 +3,22 @@ class Solution {
         int left = 0;
         int right = height.length - 1;
 
-        int leftMax = 0;
-        int rightMax = 0;
+        int res = 0;
+        int leftMax = Integer.MIN_VALUE;
+        int rightMax = Integer.MIN_VALUE;
 
-        int trappedWater = 0;
         while(left < right){
             leftMax = Math.max(height[left], leftMax);
             rightMax = Math.max(height[right], rightMax);
-            
-            if(height[left] < height[right]){
-                trappedWater = trappedWater + (leftMax - height[left]);
+
+            if(height[left] < height[right]){    
+                res = res + (leftMax - height[left]);
                 left++;
             }else{
-                trappedWater = trappedWater + (rightMax - height[right]);
+                res = res + (rightMax - height[right]);
                 right--;
             }
         }
-        return trappedWater;
+        return res;
     }
 }
