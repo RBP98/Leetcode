@@ -1,42 +1,48 @@
-public class Solution {
+class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         Map<Integer, List<Tuple>> graph = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            graph.put(i, new ArrayList<>());
+        }
         for (int[] flight : flights) {
-            graph.computeIfAbsent(flight[0], x -> new ArrayList<>())
-                .add(new Tuple(flight[1], flight[2], 0));
+            int u = flight[0], v = flight[1], cost = flight[2];
+            graph.get(u).add(new Tuple(v, cost, 0));
         }
 
-        // Min-heap: (cost so far, current node, stops so far)
-        PriorityQueue<Tuple> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.cost));
-        pq.offer(new Tuple(src, 0, 0));
+        Queue<Tuple> queue = new LinkedList<>();
+        queue.offer(new Tuple(src, 0, 0)); // node, cost, stops used
 
-        // (node -> min stops seen so far)
-        int[] minStops = new int[n];
-        Arrays.fill(minStops, Integer.MAX_VALUE);
+        int[] minCost = new int[n];
+        Arrays.fill(minCost, Integer.MAX_VALUE);
+        minCost[src] = 0;
 
-        while (!pq.isEmpty()) {
-            Tuple current = pq.poll();
-            int node = current.node;
-            int cost = current.cost;
-            int stops = current.stops;
+        while (!queue.isEmpty()) {
+            Tuple current = queue.poll();
+            int node = current.node, cost = current.cost, stops = current.stops;
 
-            if (node == dst) return cost;
+            if (stops > k) continue;
 
-            if (stops > k || stops >= minStops[node]) continue;
-            minStops[node] = stops;
-
-            if (!graph.containsKey(node)) continue;
-            for (Tuple neighbor : graph.get(node)) {
-                pq.offer(new Tuple(neighbor.node, cost + neighbor.cost, stops + 1));
+            if (graph.containsKey(node)) {
+                for (Tuple neighbor : graph.get(node)) {
+                    int next = neighbor.node;
+                    int nextCost = neighbor.cost + cost;
+                    if (nextCost < minCost[next]) {
+                        minCost[next] = nextCost;
+                        queue.offer(new Tuple(next, nextCost, stops + 1));
+                    }
+                }
             }
         }
 
-        return -1;
+        return minCost[dst] == Integer.MAX_VALUE ? -1 : minCost[dst];
     }
 }
 
 class Tuple {
-    int node, cost, stops;
+    int node;
+    int cost;
+    int stops;
+
     public Tuple(int node, int cost, int stops) {
         this.node = node;
         this.cost = cost;
