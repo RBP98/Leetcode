@@ -1,51 +1,43 @@
-class Solution {
+public class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        Map<Integer, List<Tuple>> map = new HashMap<>();
-        for(int[] flight: flights){
-            int source = flight[0];
-            int dest = flight[1];
-            int cost = flight[2];
-
-            map.putIfAbsent(source, new ArrayList<>());
-            map.get(source).add(new Tuple(flight[1], flight[2], 0));
+        Map<Integer, List<Tuple>> graph = new HashMap<>();
+        for (int[] flight : flights) {
+            graph.computeIfAbsent(flight[0], x -> new ArrayList<>())
+                .add(new Tuple(flight[1], flight[2], 0));
         }
-        
-        Queue<Tuple> queue = new PriorityQueue<>((a, b) -> Integer.compare(a.cost, b.cost));
-        queue.add(new Tuple(src, 0, k + 1));
 
+        // Min-heap: (cost so far, current node, stops so far)
+        PriorityQueue<Tuple> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.cost));
+        pq.offer(new Tuple(src, 0, 0));
+
+        // (node -> min stops seen so far)
         int[] minStops = new int[n];
         Arrays.fill(minStops, Integer.MAX_VALUE);
 
-        while(!queue.isEmpty()){
-            Tuple t = queue.poll();
-            int node = t.node;
-            int cost = t.cost;
-            int stopsRemaining = t.stops;
+        while (!pq.isEmpty()) {
+            Tuple current = pq.poll();
+            int node = current.node;
+            int cost = current.cost;
+            int stops = current.stops;
 
-            if(node == dst) return cost;
+            if (node == dst) return cost;
 
-            if(stopsRemaining > 0){
+            if (stops > k || stops >= minStops[node]) continue;
+            minStops[node] = stops;
 
-                if (stopsRemaining <= minStops[node] && minStops[node] != Integer.MAX_VALUE) continue;
-                minStops[node] = stopsRemaining;
-
-                if(map.containsKey(node)){
-                    for(Tuple neighbor: map.get(node)){
-                        int nextNode = neighbor.node;
-                        int costToNext = neighbor.cost;
-                        queue.add(new Tuple(nextNode, cost + costToNext, stopsRemaining -1));
-                    }
-                }
+            if (!graph.containsKey(node)) continue;
+            for (Tuple neighbor : graph.get(node)) {
+                pq.offer(new Tuple(neighbor.node, cost + neighbor.cost, stops + 1));
             }
         }
+
         return -1;
     }
 }
-class Tuple{
-    int node;
-    int cost;
-    int stops;
-    public Tuple(int node, int cost, int stops){
+
+class Tuple {
+    int node, cost, stops;
+    public Tuple(int node, int cost, int stops) {
         this.node = node;
         this.cost = cost;
         this.stops = stops;
