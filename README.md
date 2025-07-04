@@ -395,6 +395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0684-redundant-connection](https://github.com/RBP98/Leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
+| [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
 | [0753-open-the-lock](https://github.com/RBP98/Leetcode/tree/master/0753-open-the-lock) |
 | [0854-making-a-large-island](https://github.com/RBP98/Leetcode/tree/master/0854-making-a-large-island) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -464,6 +465,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0684-redundant-connection](https://github.com/RBP98/Leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
+| [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
 | [0854-making-a-large-island](https://github.com/RBP98/Leetcode/tree/master/0854-making-a-large-island) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0975-range-sum-of-bst](https://github.com/RBP98/Leetcode/tree/master/0975-range-sum-of-bst) |
@@ -903,6 +905,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0264-ugly-number-ii](https://github.com/RBP98/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RBP98/Leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
 | [1127-last-stone-weight](https://github.com/RBP98/Leetcode/tree/master/1127-last-stone-weight) |
 ## Quickselect
 |  |
@@ -934,6 +937,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0210-course-schedule-ii](https://github.com/RBP98/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/RBP98/Leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/RBP98/Leetcode/tree/master/0684-redundant-connection) |
+| [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/RBP98/Leetcode/tree/master/1442-number-of-operations-to-make-network-connected) |
 ## Prefix Sum
 |  |
@@ -1014,4 +1018,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0258-add-digits](https://github.com/RBP98/Leetcode/tree/master/0258-add-digits) |
+## Shortest Path
+|  |
+| ------- |
+| [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
 <!---LeetCode Topics End-->
