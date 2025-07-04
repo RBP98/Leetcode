@@ -1,51 +1,33 @@
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        Map<Integer, List<Tuple>> graph = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            graph.put(i, new ArrayList<>());
-        }
-        for (int[] flight : flights) {
-            int u = flight[0], v = flight[1], cost = flight[2];
-            graph.get(u).add(new Tuple(v, cost, 0));
-        }
+        Map<Integer, List<int[]>> adj = new HashMap<>();
+        for (int[] i : flights)
+            adj.computeIfAbsent(i[0], value -> new ArrayList<>()).add(new int[] { i[1], i[2] });
 
-        Queue<Tuple> queue = new LinkedList<>();
-        queue.offer(new Tuple(src, 0, 0)); // node, cost, stops used
+        int[] stops = new int[n];
+        Arrays.fill(stops, Integer.MAX_VALUE);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        // {dist_from_src_node, node, number_of_stops_from_src_node}
+        pq.offer(new int[] { 0, src, 0 });
 
-        int[] minCost = new int[n];
-        Arrays.fill(minCost, Integer.MAX_VALUE);
-        minCost[src] = 0;
-
-        while (!queue.isEmpty()) {
-            Tuple current = queue.poll();
-            int node = current.node, cost = current.cost, stops = current.stops;
-
-            if (stops > k) continue;
-
-            if (graph.containsKey(node)) {
-                for (Tuple neighbor : graph.get(node)) {
-                    int next = neighbor.node;
-                    int nextCost = neighbor.cost + cost;
-                    if (nextCost < minCost[next]) {
-                        minCost[next] = nextCost;
-                        queue.offer(new Tuple(next, nextCost, stops + 1));
-                    }
-                }
+        while (!pq.isEmpty()) {
+            int[] temp = pq.poll();
+            int dist = temp[0];
+            int node = temp[1];
+            int steps = temp[2];
+            // We have already encountered a path with a lower cost and fewer stops,
+            // or the number of stops exceeds the limit.
+            if (steps >= stops[node] || steps > k + 1)
+                continue;
+            stops[node] = steps;
+            if (node == dst)
+                return dist;
+            if (!adj.containsKey(node))
+                continue;
+            for (int[] a : adj.get(node)) {
+                pq.offer(new int[] { dist + a[1], a[0], steps + 1 });
             }
         }
-
-        return minCost[dst] == Integer.MAX_VALUE ? -1 : minCost[dst];
-    }
-}
-
-class Tuple {
-    int node;
-    int cost;
-    int stops;
-
-    public Tuple(int node, int cost, int stops) {
-        this.node = node;
-        this.cost = cost;
-        this.stops = stops;
+        return -1;
     }
 }
