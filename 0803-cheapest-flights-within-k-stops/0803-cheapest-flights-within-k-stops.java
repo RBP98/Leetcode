@@ -1,22 +1,44 @@
+class Tuple{
+    int node, cost, stops;
+    public Tuple(int node, int cost, int stops){
+        this.node = node;
+        this.stops = stops;
+        this.cost = cost;
+    }
+}
+
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        // Distance from source to all other nodes.
-        int[] dist = new int[n];
-        Arrays.fill(dist, Integer.MAX_VALUE);
-        dist[src] = 0;
-
-        // Run only K+1 times since we want shortest distance in K hops
-        for (int i = 0; i <= k; i++) {
-            // Create a copy of dist vector.
-            int[] temp = Arrays.copyOf(dist, n);
-            for (int[] flight : flights) {
-                if (dist[flight[0]] != Integer.MAX_VALUE) {
-                    temp[flight[1]] = Math.min(temp[flight[1]], dist[flight[0]] + flight[2]);
-                }
-            }
-            // Copy the temp vector into dist.
-            dist = temp;
+        Map<Integer, List<Tuple>> adj = new HashMap<>();
+        for(int[] flight: flights){
+            adj.putIfAbsent(flight[0], new ArrayList<Tuple>());
+            adj.get(flight[0]).add(new Tuple(flight[1], flight[2], 0));
         }
-        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
+
+        Queue<Tuple> queue = new PriorityQueue<>((a,b) -> Integer.compare(a.cost, b.cost));
+        queue.add(new Tuple(src, 0, 0));
+
+        int[] minStops = new int[n];
+        Arrays.fill(minStops, Integer.MAX_VALUE);
+
+        while(!queue.isEmpty()){
+            Tuple temp = queue.poll();
+            int node = temp.node;
+            int cost = temp.cost;
+            int stops = temp.stops;
+
+            
+            if(node == dst) return cost;
+
+            if(stops > k || stops >= minStops[node]) continue;
+            minStops[node] = stops;
+
+
+            if(!adj.containsKey(node)) continue;
+            for(Tuple neighbor: adj.get(node)){
+                queue.add(new Tuple(neighbor.node, cost + neighbor.cost, stops + 1));
+            }
+        }
+        return -1;
     }
-};
+}
