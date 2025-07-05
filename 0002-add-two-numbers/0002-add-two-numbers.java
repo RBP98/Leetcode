@@ -20,23 +20,20 @@ class Solution {
         while(ptr1 != null || ptr2 != null){
             int x = ptr1 == null ? 0 : ptr1.val;
             int y = ptr2 == null ? 0 : ptr2.val;
-            
+
             int sum = x + y + carry;
             carry = sum / 10;
             sum = sum % 10;
-            ptr.next = new ListNode(sum); 
+
+            ptr.next = new ListNode(sum);
             ptr = ptr.next;
-            
-            if(ptr1 != null)
-                ptr1 = ptr1.next;
 
-            if(ptr2 != null)
-                ptr2 = ptr2.next;
+            if(ptr1 != null) ptr1 = ptr1.next;
+            if(ptr2 != null) ptr2 = ptr2.next;
         }
 
-        if(carry > 0){
-            ptr.next = new ListNode(carry);
-        }
+        if(carry > 0) ptr.next = new ListNode(carry);
+
         return ans.next;
     }
 }
