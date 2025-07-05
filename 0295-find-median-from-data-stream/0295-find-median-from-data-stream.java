@@ -1,9 +1,11 @@
 class MedianFinder {
-    PriorityQueue<Integer> high = new PriorityQueue<>();
-    PriorityQueue<Integer> low = new PriorityQueue<>(Collections.reverseOrder());
+    PriorityQueue<Integer> high;
+    PriorityQueue<Integer> low;
 
 
     public MedianFinder() {
+        high = new PriorityQueue<>();
+        low = new PriorityQueue<>(Collections.reverseOrder());
         
     }
     
