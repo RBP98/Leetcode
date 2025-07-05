@@ -462,6 +462,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/RBP98/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/RBP98/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0332-reconstruct-itinerary](https://github.com/RBP98/Leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0513-find-bottom-left-tree-value](https://github.com/RBP98/Leetcode/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/RBP98/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/RBP98/Leetcode/tree/master/0547-number-of-provinces) |
@@ -945,6 +946,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/RBP98/Leetcode/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/RBP98/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/RBP98/Leetcode/tree/master/0210-course-schedule-ii) |
+| [0332-reconstruct-itinerary](https://github.com/RBP98/Leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0547-number-of-provinces](https://github.com/RBP98/Leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/RBP98/Leetcode/tree/master/0684-redundant-connection) |
 | [0744-network-delay-time](https://github.com/RBP98/Leetcode/tree/master/0744-network-delay-time) |
@@ -1039,4 +1041,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1706-min-cost-to-connect-all-points](https://github.com/RBP98/Leetcode/tree/master/1706-min-cost-to-connect-all-points) |
+## Eulerian Circuit
+|  |
+| ------- |
+| [0332-reconstruct-itinerary](https://github.com/RBP98/Leetcode/tree/master/0332-reconstruct-itinerary) |
 <!---LeetCode Topics End-->
