@@ -5,7 +5,7 @@ class MedianFinder {
 
     public MedianFinder() {
         high = new PriorityQueue<>();
-        low = new PriorityQueue<>(Collections.reverseOrder());
+        low = new PriorityQueue<>((a,b)-> b-a);
         
     }
     
