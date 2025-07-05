@@ -26,8 +26,8 @@ class Solution {
             int col = c.col;
             int time = c.time;
 
-            if (visited[row][col]) continue;
-            visited[row][col] = true;
+            // if (visited[row][col]) continue;
+            // visited[row][col] = true;
 
             if(row == n-1 && col == n-1) return time; 
 
@@ -37,6 +37,7 @@ class Solution {
                 
                 if(nrow >= 0 && ncol >= 0 && nrow < n && ncol < n && !visited[nrow][ncol]){
                     pq.add(new Cell(nrow, ncol, Math.max(time, grid[nrow][ncol])));
+                    visited[nrow][ncol] = true;
                 }
             }
         }
