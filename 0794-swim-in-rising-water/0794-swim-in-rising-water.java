@@ -14,8 +14,7 @@ class Solution {
         boolean[][] visited = new boolean[n][n];
 
         pq.add(new Cell(0, 0, grid[0][0]));
-        visited[0][0] = true;
-
+        
         int[] drow = {0, 1, 0, -1};
         int[] dcol = {1, 0, -1, 0};
 
