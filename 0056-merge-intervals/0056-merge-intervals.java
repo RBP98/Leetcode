@@ -4,17 +4,17 @@ class Solution {
 
         List<int[]> list = new ArrayList<>();
         int[] prev = intervals[0];
-        list.add(prev);
-
+      
         for(int[] curr: intervals){
             if(prev[1] >= curr[0]){
                 prev[1] = Math.max(prev[1], curr[1]);
             }else{
-                list.add(curr);
+                list.add(prev);
                 prev = curr;
             }
         }
-        
+        list.add(prev);
+
         int[][] res= new int[list.size()][2];
         int count = 0;
         for(int[] i: list){
