@@ -542,6 +542,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
 | [1925-count-square-sum-triples](https://github.com/RBP98/Leetcode/tree/master/1925-count-square-sum-triples) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2169-count-operations-to-obtain-zero](https://github.com/RBP98/Leetcode/tree/master/2169-count-operations-to-obtain-zero) |
 | [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
 | [3371-harshad-number](https://github.com/RBP98/Leetcode/tree/master/3371-harshad-number) |
 ## Simulation
@@ -558,6 +559,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/RBP98/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2169-count-operations-to-obtain-zero](https://github.com/RBP98/Leetcode/tree/master/2169-count-operations-to-obtain-zero) |
 | [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
 | [2662-check-knight-tour-configuration](https://github.com/RBP98/Leetcode/tree/master/2662-check-knight-tour-configuration) |
 ## Stack
