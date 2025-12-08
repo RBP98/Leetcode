@@ -590,6 +590,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/RBP98/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2000-reverse-prefix-of-word](https://github.com/RBP98/Leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/RBP98/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
 ## Hash Table
 |  |
@@ -696,6 +697,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1894-merge-strings-alternately](https://github.com/RBP98/Leetcode/tree/master/1894-merge-strings-alternately) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/RBP98/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/RBP98/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
+| [2000-reverse-prefix-of-word](https://github.com/RBP98/Leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/RBP98/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/RBP98/Leetcode/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/RBP98/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
@@ -909,6 +911,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0908-middle-of-the-linked-list](https://github.com/RBP98/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1028-interval-list-intersections](https://github.com/RBP98/Leetcode/tree/master/1028-interval-list-intersections) |
 | [1894-merge-strings-alternately](https://github.com/RBP98/Leetcode/tree/master/1894-merge-strings-alternately) |
+| [2000-reverse-prefix-of-word](https://github.com/RBP98/Leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/RBP98/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Dynamic Programming
 |  |
