@@ -540,6 +540,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1014-k-closest-points-to-origin](https://github.com/RBP98/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1119-robot-bounded-in-circle](https://github.com/RBP98/Leetcode/tree/master/1119-robot-bounded-in-circle) |
 | [1642-water-bottles](https://github.com/RBP98/Leetcode/tree/master/1642-water-bottles) |
+| [1925-count-square-sum-triples](https://github.com/RBP98/Leetcode/tree/master/1925-count-square-sum-triples) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/RBP98/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/RBP98/Leetcode/tree/master/2645-pass-the-pillow) |
 | [3371-harshad-number](https://github.com/RBP98/Leetcode/tree/master/3371-harshad-number) |
@@ -1066,6 +1067,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Enumeration
 |  |
 | ------- |
+| [1925-count-square-sum-triples](https://github.com/RBP98/Leetcode/tree/master/1925-count-square-sum-triples) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/RBP98/Leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 ## Iterator
 |  |
