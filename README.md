@@ -585,6 +585,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0883-car-fleet](https://github.com/RBP98/Leetcode/tree/master/0883-car-fleet) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/RBP98/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/RBP98/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1249-minimum-remove-to-make-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/RBP98/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1720-crawler-log-folder](https://github.com/RBP98/Leetcode/tree/master/1720-crawler-log-folder) |
@@ -682,6 +683,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/RBP98/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1119-robot-bounded-in-circle](https://github.com/RBP98/Leetcode/tree/master/1119-robot-bounded-in-circle) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/RBP98/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1249-minimum-remove-to-make-valid-parentheses](https://github.com/RBP98/Leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1250-longest-common-subsequence](https://github.com/RBP98/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1297-maximum-number-of-balloons](https://github.com/RBP98/Leetcode/tree/master/1297-maximum-number-of-balloons) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/RBP98/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
