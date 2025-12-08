@@ -1,21 +1,42 @@
 class Solution {
     public int countTriples(int n) {
-        int sqArr[] = new int[n];
-        Set<Integer> set = new HashSet<>();
-        
-        for(int i = 0; i < n; i++){
-            sqArr[i] = (i + 1) * (i + 1);
-            set.add(sqArr[i]);
-        }
         int count = 0;
-        for(int i = 0; i < sqArr.length; i++){
-            for(int j = i; j < sqArr.length; j++){
-                if(set.contains(sqArr[i] + sqArr[j])){
-                    count= count + 2;
+        
+        for (int m = 2; m * m <= n; m++) {
+            for (int k = 1; k < m; k++) {
+                if (((m - k) & 1) == 0) continue;  
+                if (gcd(m, k) != 1) continue;      
+
+                int a0 = m * m - k * k;
+                int b0 = 2 * m * k;
+                int c0 = m * m + k * k;
+
+                if (c0 > n) break; 
+
+                int a = a0, b = b0, c = c0;
+                while (c <= n) {
+                    if (a != b) {
+                        count += 2;
+                    } else {
+                        count += 1;
+                    }
+
+                    a += a0;
+                    b += b0;
+                    c += c0;
                 }
             }
         }
 
         return count;
+    }
+
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int t = a % b;
+            a = b;
+            b = t;
+        }
+        return a;
     }
 }
