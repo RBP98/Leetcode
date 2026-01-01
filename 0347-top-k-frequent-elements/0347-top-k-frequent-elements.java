@@ -1,53 +1,44 @@
 class Solution {
-    
-    // {1: 3, 2: 5, 3: 2, 6: 4}
-    // [3, ]
-
     public int[] topKFrequent(int[] nums, int k) {
+        // int maxValue = 0;
+        int maxFreq = 0;
         
         Map<Integer, Integer> map = new HashMap<>();
-        // int minFreq = Integer.MAX_VALUE;
-        // int maxFreq = Integer.MIN_VALUE;
-        
-        // for(int i : nums){
-        //     minNum  = Math.min(minNum, i);
-        //     maxNum  = Math.max(maxNum, i);
-        // }
-        
+
         for(int i: nums){
-            map.put(i, map.getOrDefault(i, 0) + 1);
+            int temp = map.getOrDefault(i, 0) + 1;
+            map.put(i, temp);
+            maxFreq = Math.max(maxFreq, temp);
+            // maxValue = Math.max(maxValue, i);
         }
+        System.out.println(maxFreq);
 
-        List<Integer>[] arr = new ArrayList[nums.length + 1];
+        ArrayList<Integer> buckets[] = new ArrayList[maxFreq + 1];
 
-        for(Map.Entry<Integer, Integer> entry : map.entrySet()){
+        for(Map.Entry<Integer, Integer> entry: map.entrySet()){
             int key = entry.getKey();
             int value = entry.getValue();
 
-            if(arr[value] == null){
-                arr[value] = new ArrayList<>();
+            if(buckets[value] == null){
+                buckets[value] = new ArrayList<>();   
             }
-
-            arr[value].add(key);
+            buckets[value].add(key);
 
         }
+        int[] res = new int[k];
         int count = 0;
-        int res[] = new int[k];
-        for(int i = arr.length - 1; i >= 0 && count < k; i--){
-            if(arr[i] != null){
-                for(int num: arr[i]){
-                    
-                    res[count] = num;
-                    count++;
+        for(int i = buckets.length - 1; i > 0; i--){
+            if(buckets[i] != null){
+                for(int j: buckets[i]){
                     if(count == k){
                         break;
                     }
-                    
+                    res[count++] = j;
                 }
             }
-
         }
 
         return res;
+
     }
 }
