@@ -7,7 +7,7 @@ class Solution {
         for(int i = 0; i < nums.length; i++){
             prefix = prefix + nums[i];
             if(map.containsKey(prefix - k)){
-                count++;
+                count = count + map.get(prefix - k);
             }
             map.put(prefix, map.getOrDefault(prefix, 0) + 1);
         }
