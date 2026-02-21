@@ -1106,4 +1106,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/RBP98/Leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Union-Find
+|  |
+| ------- |
+| [0695-max-area-of-island](https://github.com/RBP98/Leetcode/tree/master/0695-max-area-of-island) |
 <!---LeetCode Topics End-->
