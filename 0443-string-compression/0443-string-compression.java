@@ -12,14 +12,11 @@ class Solution {
 
             chars[writeIndex++] = currChar;
             if(count > 1){
-                String s = String.valueOf(count);
-                for(int j = 0; j < s.length(); j++){
-                    chars[writeIndex++] = s.charAt(j);
+                for(char c : String.valueOf(count).toCharArray()){
+                    chars[writeIndex++] = c;
                 }
             }
             
-
-
         }
 
         return writeIndex;
