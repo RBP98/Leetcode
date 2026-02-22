@@ -299,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0883-car-fleet](https://github.com/RBP98/Leetcode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/RBP98/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/RBP98/Leetcode/tree/master/0912-random-pick-with-weight) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/RBP98/Leetcode/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [1014-k-closest-points-to-origin](https://github.com/RBP98/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1028-interval-list-intersections](https://github.com/RBP98/Leetcode/tree/master/1028-interval-list-intersections) |
 | [1036-rotting-oranges](https://github.com/RBP98/Leetcode/tree/master/1036-rotting-oranges) |
@@ -728,6 +729,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/RBP98/Leetcode/tree/master/0721-accounts-merge) |
 | [0807-custom-sort-string](https://github.com/RBP98/Leetcode/tree/master/0807-custom-sort-string) |
 | [0883-car-fleet](https://github.com/RBP98/Leetcode/tree/master/0883-car-fleet) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/RBP98/Leetcode/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [1014-k-closest-points-to-origin](https://github.com/RBP98/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/RBP98/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [3291-find-if-array-can-be-sorted](https://github.com/RBP98/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
@@ -742,6 +744,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/RBP98/Leetcode/tree/master/0621-task-scheduler) |
 | [0670-maximum-swap](https://github.com/RBP98/Leetcode/tree/master/0670-maximum-swap) |
 | [0680-valid-palindrome-ii](https://github.com/RBP98/Leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/RBP98/Leetcode/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/RBP98/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/RBP98/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/RBP98/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
@@ -752,6 +755,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/RBP98/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0387-first-unique-character-in-a-string](https://github.com/RBP98/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/RBP98/Leetcode/tree/master/0621-task-scheduler) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/RBP98/Leetcode/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [1297-maximum-number-of-balloons](https://github.com/RBP98/Leetcode/tree/master/1297-maximum-number-of-balloons) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/RBP98/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/RBP98/Leetcode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
