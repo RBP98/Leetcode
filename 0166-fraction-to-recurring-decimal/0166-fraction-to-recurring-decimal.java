@@ -1,37 +1,43 @@
 class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
-        if(numerator == 0) return "0";
-        // if(numerator == denominator) return "1";
-        
-        StringBuilder sb = new StringBuilder();
-        if((numerator < 0) ^ (denominator < 0)) sb.append("-");
 
-        long dividend = Math.abs(Long.valueOf(numerator));
-        long divisor = Math.abs(Long.valueOf(denominator));
-
-        sb.append(String.valueOf(dividend/divisor));
-
-        long remainder = dividend % divisor;
-
-        if(remainder == 0){
-            return sb.toString();
-        }else{
-            sb.append(".");
+        if (numerator == 0) {
+            return "0";
         }
-        Map<Long, Integer> map = new HashMap<>();
-        while(remainder != 0){
-            if(map.containsKey(remainder)){
-                sb.insert(map.get(remainder), "(");
-                sb.append(")");
+
+        StringBuilder ans = new StringBuilder();
+        ans.append((numerator > 0) ^ (denominator > 0) ? "-" : "" );
+
+        long num = Math.abs((long)numerator);
+        long den = Math.abs((long)denominator);
+        ans.append(num/den);
+
+        num = num % den;
+        if(num == 0){
+            return ans.toString();
+        }
+        
+        ans.append(".");
+        Map<Long, Integer> map = new HashMap<Long, Integer>();
+        map.put(num, ans.length());
+        while(num != 0){
+            num = num * 10;
+            ans.append(num / den);
+           
+            num = num % den;
+
+            if(map.containsKey(num)){
+                int index = map.get(num);
+                ans.insert(index,"(");
+                ans.append(")");
                 break;
+            }else{
+                 map.put(num, ans.length());
             }
 
-            map.put(remainder, sb.length());
-            remainder = remainder * 10;
-            sb.append(String.valueOf(remainder/divisor));
-            remainder = remainder % divisor;
 
         }
-        return sb.toString();
+
+        return ans.toString();
     }
 }
