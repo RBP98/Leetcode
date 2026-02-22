@@ -1,8 +1,8 @@
 class Solution {
     public int countPrimes(int n) {
-        // if (n <= 2) {
-        //     return 0;
-        // }
+        if (n <= 2) {
+            return 0;
+        }
         boolean[] sieve = new boolean[n];
         for(int i = 2; i <= (int)Math.sqrt(n); i++){
             if(!sieve[i]){
