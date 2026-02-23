@@ -1,26 +1,17 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        int[] leftBest = new int[prices.length];
-        int[] rightBest = new int[prices.length];
+        int buy1 = Integer.MIN_VALUE;
+        int sell1 = 0;
+        int buy2 = Integer.MIN_VALUE;
+        int sell2 = 0;
 
-        int minVal = prices[0];
-
-        for(int i = 1; i < prices.length; i++){
-            minVal = Math.min(minVal, prices[i]);
-            leftBest[i] = Math.max(leftBest[i - 1], prices[i] - minVal);
+        for(int p: prices){
+            buy1 = Math.max(buy1, -p);
+            sell1 = Math.max(sell1, buy1 + p);
+            buy2 = Math.max(buy2, sell1 - p);
+            sell2 = Math.max(sell2, buy2 + p);
         }
 
-        int maxVal = prices[prices.length-1];
-
-        for(int i = prices.length - 2; i >= 0; i--){
-            maxVal = Math.max(maxVal, prices[i]);
-            rightBest[i] = Math.max(rightBest[i + 1], maxVal - prices[i]);
-        }
-        int ans = 0;
-        for(int i = 0; i < prices.length; i++){
-            ans = Math.max(ans, rightBest[i] + leftBest[i]);
-        }
-
-        return ans;
+        return sell2;
     }
 }
