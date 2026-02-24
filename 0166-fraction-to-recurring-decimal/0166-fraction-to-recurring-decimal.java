@@ -1,43 +1,42 @@
 class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
+        if(numerator == 0) return "0";
 
-        if (numerator == 0) {
-            return "0";
-        }
+        StringBuilder sb = new StringBuilder();
 
-        StringBuilder ans = new StringBuilder();
-        ans.append((numerator > 0) ^ (denominator > 0) ? "-" : "" );
+        sb.append((numerator > 0) ^ (denominator > 0) ? "-" : "");
 
         long num = Math.abs((long)numerator);
         long den = Math.abs((long)denominator);
-        ans.append(num/den);
+        sb.append(num/den);
 
         num = num % den;
-        if(num == 0){
-            return ans.toString();
-        }
-        
-        ans.append(".");
-        Map<Long, Integer> map = new HashMap<Long, Integer>();
-        map.put(num, ans.length());
+
+        if(num == 0) return sb.toString();
+
+        sb.append(".");
+
+        Map<Long, Integer> map = new HashMap<>();
+        map.put(num, sb.length());
+
         while(num != 0){
             num = num * 10;
-            ans.append(num / den);
-           
+            sb.append(num/den);
             num = num % den;
 
             if(map.containsKey(num)){
-                int index = map.get(num);
-                ans.insert(index,"(");
-                ans.append(")");
+                int temp = map.get(num);
+                sb.insert(temp, "(");
+                sb.append(")");
                 break;
             }else{
-                 map.put(num, ans.length());
+                
+                map.put(num, sb.length());
+
             }
 
+        } 
 
-        }
-
-        return ans.toString();
+        return sb.toString();
     }
 }
