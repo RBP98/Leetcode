@@ -1,6 +1,14 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if(n == -2147483648) return false;
-        return Integer.bitCount(n) == 1;
+        return helper(n);
+    }
+
+    private boolean helper(int n){
+        if(n == 0 )return false;
+        if(n == 1) return true;
+
+        if(n % 2 != 0) return false;
+
+        return helper(n/2);
     }
 }
